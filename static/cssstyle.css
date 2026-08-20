@@ -1,0 +1,221 @@
+/* DriveWise Premium CSS Design System */
+:root {
+  --primary-color: #2563eb;
+  --primary-hover: #1d4ed8;
+  --secondary-color: #0f172a;
+  --success-color: #10b981;
+  --background-light: #f8fafc;
+  --border-color: #e2e8f0;
+  --text-muted: #64748b;
+  --card-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05), 0 8px 15px -6px rgba(0, 0, 0, 0.05);
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.4);
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--background-light);
+  color: var(--secondary-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Navbar Custom Styling */
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.75rem 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.02);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 850;
+  color: var(--secondary-color) !important;
+  letter-spacing: -0.8px;
+}
+
+.btn-nav {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  border: 1px solid transparent;
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-nav:hover, .btn-nav.active {
+  color: var(--primary-color);
+  background-color: #eff6ff;
+  border-color: #dbeafe;
+}
+
+/* Landing Cover Page Hero */
+.cover-hero {
+  background: radial-gradient(circle at 10% 20%, rgb(15, 23, 42) 0%, rgb(30, 58, 138) 90%);
+  padding: 6rem 1rem;
+  text-align: center;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cover-hero h1 {
+  font-weight: 900;
+  font-size: 3.5rem;
+  letter-spacing: -2px;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(to right, #ffffff 40%, #93c5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cover-hero p {
+  font-size: 1.25rem;
+  color: #93c5fd;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.6;
+}
+
+/* Glassmorphism Auth Cards */
+.auth-container {
+  min-height: calc(100vh - 75px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: radial-gradient(circle at 90% 10%, #dbeafe 0%, #f8fafc 60%);
+}
+
+.auth-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.12);
+  width: 100%;
+  max-width: 420px;
+}
+
+/* Forms design */
+.form-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.form-control, .form-select {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 0.65rem 0.9rem;
+  font-size: 0.95rem;
+  color: var(--secondary-color);
+  background-color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+/* Buttons styling */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  font-weight: 600;
+  padding: 0.65rem 1.25rem;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+/* Panels */
+.page-panel {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: var(--card-shadow);
+}
+
+/* Recommendation Cards */
+.recommendation-card {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--border-color);
+  background-color: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.recommendation-card:hover {
+  transform: translateY(-2px);
+}
+
+.car-image-container {
+  overflow: hidden;
+  background-color: #ffffff;
+  border-right: 1px solid var(--border-color);
+}
+
+.car-image {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.recommendation-card:hover .car-image {
+  transform: scale(1.05);
+}
+
+/* Featured Highlights Cards */
+.card-featured {
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-featured:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px -5px rgba(15, 23, 42, 0.08);
+}
+
+.metric-box {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+}
+
+.metric-box strong {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 850;
+  line-height: 1.1;
+  margin-top: 0.5rem;
+}
+
+.table-responsive {
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+}
+
+.table th {
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--text-muted);
+}
