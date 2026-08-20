@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Recommendation Form | DriveWise</title>
+  <!-- Google Fonts: Outfit -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='cssstyle.css') }}">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="{{ url_for('home') }}">
+        <i class="bi bi-car-front-fill text-primary"></i>
+        <span>DriveWise</span>
+      </a>
+      <div class="d-flex align-items-center gap-2">
+        <span class="text-secondary small fw-bold me-2"><i class="bi bi-person-circle text-primary"></i> {{ session.username }}</span>
+        <a class="btn btn-nav active d-flex align-items-center gap-1" href="{{ url_for('predict_form') }}">
+          <i class="bi bi-magic text-primary"></i>
+          <span>Get Match</span>
+        </a>
+        <a class="btn btn-nav d-flex align-items-center gap-1" href="{{ url_for('dashboard') }}">
+          <i class="bi bi-bar-chart-fill"></i>
+          <span>Dashboard</span>
+        </a>
+        <a class="btn btn-nav d-flex align-items-center gap-1" href="{{ url_for('history') }}">
+          <i class="bi bi-clock-history"></i>
+          <span>History</span>
+        </a>
+        <a class="btn btn-outline-danger btn-sm rounded-3 px-3 py-1 fw-bold text-decoration-none" href="{{ url_for('logout') }}">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="alert alert-{{ category }} alert-dismissible fade show border-0 rounded-3 mb-4 shadow-sm" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <div class="row g-4">
+      <!-- Input Panel -->
+      <div class="col-lg-8">
+        <div class="page-panel mb-4">
+          <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link {% if not query %}active{% endif %}" id="pills-recommend-tab" data-bs-toggle="pill" data-bs-target="#pills-recommend" type="button" role="tab" aria-controls="pills-recommend" aria-selected="true">
+                <i class="bi bi-robot me-1"></i> AI Matcher Questionnaire
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link {% if query %}active{% endif %}" id="pills-search-tab" data-bs-toggle="pill" data-bs-target="#pills-search" type="button" role="tab" aria-controls="pills-search" aria-selected="false">
+                <i class="bi bi-search me-1"></i> Direct Inventory Search
+              </button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="pills-tabContent">
+            <!-- Tab 1: Form Recommendation -->
+            <div class="tab-pane fade {% if not query %}show active{% endif %}" id="pills-recommend" role="tabpanel" aria-labelledby="pills-recommend-tab">
+              <form class="row g-3" action="{{ url_for('predict') }}" method="post">
+                <h5 class="section-title"><i class="bi bi-person-fill text-primary"></i> Demographic Profile</h5>
+                <div class="col-md-4">
+                  <label class="form-label">Age</label>
+                  <input class="form-control" type="number" name="Age" min="18" max="90" value="30" required>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label">Gender</label>
+                  <select class="form-select" name="Gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label">Marital Status</label>
+                  <select class="form-select" name="MaritalStatus">
+                    <option>Single</option>
+                    <option>Married</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Profession / Occupation</label>
+                  <select class="form-select" name="Occupation">
+                    <option value="IT Professional">IT Professional</option>
+                    <option value="Doctor">Doctor</option>
+                    <option value="Engineer">Engineer</option>
+                    <option value="Consultant">Consultant</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="Business Owner">Business Owner</option>
+                    <option value="Corporate Executive">Corporate Executive</option>
+                    <option value="Student">Student</option>
+                    <option value="Retired">Retired</option>
+                    <option value="Salaried Employee">Salaried Employee</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">City / Location</label>
+                  <input class="form-control" type="text" name="City" value="Mumbai" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Monthly Income Slabs (e.g. "60000" or "50000 - 80000")</label>
+                  <input class="form-control" type="text" name="MonthlyIncome" value="60000" placeholder="e.g. 50000-80000" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Family Size (Passengers)</label>
+                  <input class="form-control" type="number" name="FamilySize" min="1" max="10" value="4" required>
+                </div>
+
+                <h5 class="section-title mt-4"><i class="bi bi-sliders text-primary"></i> Vehicle Preferences</h5>
+                <div class="col-md-4">
+                  <label class="form-label">Budget Limit (₹ Lakh)</label>
+                  <input class="form-control" type="number" step="0.1" name="Budget" value="12.0" required>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label">Transmission Type</label>
+                  <select class="form-select" name="Transmission">
+                    <option>Manual</option>
+                    <option>Automatic</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label">Fuel Preference</label>
+                  <select class="form-select" name="FuelPreference">
+                    <option>Petrol</option>
+                    <option>Diesel</option>
+                    <option>Electric</option>
+                    <option>CNG</option>
+                    <option>Hybrid</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Preferred Vehicle Type</label>
+                  <select class="form-select" name="PreferredVehicleType">
+                    <option>SUV</option>
+                    <option>Hatchback</option>
+                    <option>Sedan</option>
+                    <option>MUV</option>
+                    <option>EV</option>
+                    <option>Luxury</option>
+                    <option>Pickup Truck</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Driving Experience (Years)</label>
+                  <input class="form-control" type="number" step="0.1" name="DrivingExperience" value="5.0" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Daily Distance (KM / day)</label>
+                  <input class="form-control" type="number" step="0.1" name="DailyRunningKM" value="30.0" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Purchase Purpose</label>
+                  <select class="form-select" name="PurchasePurpose">
+                    <option>Personal</option>
+                    <option>Commute</option>
+                    <option>Business</option>
+                  </select>
+                </div>
+
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-primary w-100 py-3 shadow-sm"><i class="bi bi-check2-circle"></i> Calculate Match Recommendation</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Tab 2: Quick Search -->
+            <div class="tab-pane fade {% if query %}show active{% endif %}" id="pills-search" role="tabpanel" aria-labelledby="pills-search-tab">
+              <form class="row g-3" action="{{ url_for('search') }}" method="get">
+                <div class="col-md-8">
+                  <label class="form-label">Search Keyword / Price</label>
+                  <input type="text" class="form-control" name="query" value="{{ query }}" placeholder="Search by brand, segment, or max budget limit" required>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label">Filter Type</label>
+                  <select class="form-select" name="type">
+                    <option value="brand" {% if type == 'brand' %}selected{% endif %}>Car Brand</option>
+                    <option value="segment" {% if type == 'segment' %}selected{% endif %}>Segment / Class</option>
+                    <option value="budget" {% if type == 'budget' %}selected{% endif %}>Max Budget Limit (₹ Lakh)</option>
+                  </select>
+                </div>
+                <div class="col-12 mt-3">
+                  <button type="submit" class="btn btn-primary w-100"><i class="bi bi-search"></i> Search Catalog</button>
+                </div>
+              </form>
+
+              {% if search_results is not none %}
+                <div class="mt-4 border-top pt-4">
+                  <h6 class="fw-bold mb-3"><i class="bi bi-list-stars"></i> Search Results ({{ search_results|length }} found)</h6>
+                  {% if search_results|length == 0 %}
+                    <div class="alert alert-light text-center border py-4">No inventory matching "{{ query }}" was found.</div>
+                  {% else %}
+                    <div class="row g-3">
+                      {% for car in search_results %}
+                        <div class="col-md-6">
+                          <div class="card h-100 shadow-sm border-0 border-start border-primary border-4 p-3 bg-light">
+                            <h6 class="fw-bold text-dark mb-1">{{ car.Brand }} {{ car.Model }}</h6>
+                            <p class="mb-2 text-secondary small">{{ car.Segment }} | {{ car.FuelType }} | {{ car.Transmission }}</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                              <div class="d-flex gap-2">
+                                <span class="badge bg-success bg-opacity-10 text-success">⭐ {{ car.SafetyRating }} NCAP</span>
+                                <span class="badge bg-secondary bg-opacity-10 text-secondary small" title="Address: {{ car.DealerAddress }} | Phone: {{ car.DealerPhone }}"><i class="bi bi-shop"></i> {{ car.Dealer }}</span>
+                              </div>
+                              <strong class="text-success small">₹{{ car.Price }} Lakh</strong>
+                            </div>
+                          </div>
+                        </div>
+                      {% endfor %}
+                    </div>
+                  {% endif %}
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Panel: Info Highlights -->
+      <div class="col-lg-4">
+        <div class="page-panel bg-light border-0 mb-4">
+          <h5 class="fw-bold mb-3 text-dark"><i class="bi bi-info-circle text-primary"></i> Instructions</h5>
+          <p class="small text-secondary mb-3">
+            Our recommendation model checks your profile indicators (like budget limits and passenger requirements) and matches them to our current inventory.
+          </p>
+          <ul class="small text-secondary ps-3 mb-0">
+            <li class="mb-2"><strong>Demo profile</strong> maps you statistically via ML logic.</li>
+            <li class="mb-2"><strong>Vehicle preferences</strong> establish hard filters (like budget limits).</li>
+            <li class="mb-0"><strong>Indian market defaults</strong> map budgets below ₹5.0 Lakhs or Hatchbacks.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white-50 text-center py-4 border-top border-secondary mt-5">
+    <div class="container small">
+      <p class="mb-0">&copy; 2026 DriveWise AI Automotive Platform. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

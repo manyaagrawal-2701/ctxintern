@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DriveWise | Premium AI Car Recommendations</title>
+  <!-- Google Fonts: Outfit -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='cssstyle.css') }}">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="{{ url_for('home') }}">
+        <i class="bi bi-car-front-fill text-primary"></i>
+        <span>DriveWise</span>
+      </a>
+      <div class="d-flex align-items-center gap-2">
+        {% if session.username %}
+          <span class="text-secondary small fw-bold me-2"><i class="bi bi-person-circle text-primary"></i> {{ session.username }}</span>
+          <a class="btn btn-nav d-flex align-items-center gap-1" href="{{ url_for('predict_form') }}">
+            <i class="bi bi-magic text-primary"></i>
+            <span>Get Match</span>
+          </a>
+          <a class="btn btn-nav d-flex align-items-center gap-1" href="{{ url_for('dashboard') }}">
+            <i class="bi bi-bar-chart-fill"></i>
+            <span>Dashboard</span>
+          </a>
+          <a class="btn btn-nav d-flex align-items-center gap-1" href="{{ url_for('history') }}">
+            <i class="bi bi-clock-history"></i>
+            <span>History</span>
+          </a>
+          <a class="btn btn-outline-danger btn-sm rounded-3 px-3 py-1 fw-bold text-decoration-none" href="{{ url_for('logout') }}">Logout</a>
+        {% else %}
+          <a class="btn btn-nav" href="{{ url_for('login') }}">Sign In</a>
+          <a class="btn btn-primary btn-sm rounded-3 px-3 py-2" href="{{ url_for('register') }}">Get Started</a>
+        {% endif %}
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cover Hero Cover Page Banner -->
+  <header class="cover-hero">
+    <div class="container py-3">
+      <h1>Find Your Perfect Ride with DriveWise</h1>
+      <p>
+        DriveWise combines machine learning classification with multi-criteria decision algorithms. 
+        Enter your demographics, monthly income slabs, and vehicle preferences, and our system maps you to the safest, most cost-effective matches in inventory.
+      </p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        {% if session.username %}
+          <a href="{{ url_for('predict_form') }}" class="btn btn-primary btn-lg px-4 py-3 rounded-3 shadow-lg d-flex align-items-center gap-2">
+            <i class="bi bi-magic"></i> Get AI Match Recommendation
+          </a>
+          <a href="{{ url_for('dashboard') }}" class="btn btn-outline-light btn-lg px-4 py-3 rounded-3 d-flex align-items-center gap-2">
+            <i class="bi bi-bar-chart-line"></i> View Dashboard Analytics
+          </a>
+        {% else %}
+          <a href="{{ url_for('login') }}" class="btn btn-primary btn-lg px-4 py-3 rounded-3 shadow-lg d-flex align-items-center gap-2">
+            <i class="bi bi-rocket-takeoff-fill"></i> Login to get AI Matches
+          </a>
+          <a href="{{ url_for('register') }}" class="btn btn-outline-light btn-lg px-4 py-3 rounded-3 d-flex align-items-center gap-2">
+            <i class="bi bi-person-plus-fill"></i> Create Free Account
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="alert alert-{{ category }} alert-dismissible fade show border-0 rounded-3 mb-4 shadow-sm" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <!-- About Section -->
+    <section class="row align-items-center g-5 mb-5 pb-4">
+      <div class="col-md-6">
+        <div class="d-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary rounded-circle mb-3" style="width: 50px; height: 50px;">
+          <i class="bi bi-patch-check-fill fs-4"></i>
+        </div>
+        <h2 class="fw-bold mb-3 text-dark">Data-Driven Recommendation</h2>
+        <p class="text-secondary leading-relaxed">
+          DriveWise trains several advanced classifier models (including <strong>Random Forest</strong>, <strong>Gradient Boosting</strong>, and <strong>XGBoost</strong>) and dynamically selects the best-performing one to predict your ideal vehicle segment based on your demographic profile.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex align-items-center justify-content-center bg-success bg-opacity-10 text-success rounded-circle mb-3" style="width: 50px; height: 50px;">
+          <i class="bi bi-shield-fill-check fs-4"></i>
+        </div>
+        <h2 class="fw-bold mb-3 text-dark">Multi-Criteria Scoring</h2>
+        <p class="text-secondary leading-relaxed">
+          Once the AI segment is selected, the engine evaluates every car model on our dealer lot using a 100-point proximity matrix. The scoring engine evaluates your specific budget bounds, transmission preferences, fuel preferences, safety NCAP star counts, and passenger capacity.
+        </p>
+      </div>
+    </section>
+
+    <!-- Top Safest / Efficient Models Section -->
+    <div class="border-top pt-5">
+      <h3 class="fw-bold mb-4 text-dark"><i class="bi bi-star-fill text-warning me-2"></i> Safe & Economical Highlights</h3>
+      <p class="text-secondary small mb-4 mt-n2"><i class="bi bi-info-circle"></i> Click any car card below to view its full specifications and dealer availability details.</p>
+      <div class="row g-4">
+        {% for car in top_cars %}
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-featured h-100 shadow-sm border-0 overflow-hidden" 
+                 style="cursor: pointer;"
+                 data-bs-toggle="modal" 
+                 data-bs-target="#carModal-{{ loop.index }}">
+              <div class="bg-light d-flex align-items-center justify-content-center overflow-hidden" style="height: 180px;">
+                <img src="{{ url_for('static', filename='images/cars/' + car.Image) }}" 
+                     alt="{{ car.Brand }} {{ car.Model }}" 
+                     class="h-100 w-100 object-fit-contain p-3"
+                     onerror="this.src='{{ url_for('static', filename='images/cars/fallback_suv.jpg') }}';">
+              </div>
+              <div class="card-body p-4">
+                <h5 class="fw-bold mb-2">{{ car.Brand }} {{ car.Model }}</h5>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge bg-primary bg-opacity-10 text-primary">{{ car.Segment }}</span>
+                  <span class="badge bg-success bg-opacity-10 text-success">⭐ {{ car.SafetyRating }} NCAP</span>
+                  <span class="badge bg-warning bg-opacity-10 text-warning">{{ car.Mileage }} km/l</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center border-top pt-3">
+                  <span class="text-secondary small">Ex-Showroom Price</span>
+                  <span class="fw-bold text-success" style="font-size: 1.1rem;">₹{{ car.Price }} Lakh</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Detail Popup -->
+          <div class="modal fade" id="carModal-{{ loop.index }}" tabindex="-1" aria-labelledby="carModalLabel-{{ loop.index }}" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content border-0 shadow-lg rounded-4">
+                <div class="modal-header bg-dark text-white border-0 py-3 rounded-top-4">
+                  <h5 class="modal-title fw-bold" id="carModalLabel-{{ loop.index }}">
+                    <i class="bi bi-car-front-fill me-1"></i> {{ car.Brand }} {{ car.Model }}
+                  </h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                  <div class="row g-4">
+                    <div class="col-md-5">
+                      <div class="bg-light d-flex align-items-center justify-content-center overflow-hidden rounded-3 border p-2" style="height: 250px;">
+                        <img src="{{ url_for('static', filename='images/cars/' + car.Image) }}" 
+                             alt="{{ car.Brand }} {{ car.Model }}" 
+                             class="w-100 h-100 object-fit-contain"
+                             onerror="this.src='{{ url_for('static', filename='images/cars/fallback_suv.jpg') }}';">
+                      </div>
+                    </div>
+                    <div class="col-md-7">
+                      <h4 class="fw-bold mb-2 text-dark">{{ car.Brand }} {{ car.Model }}</h4>
+                      <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="badge bg-primary">{{ car.Segment }}</span>
+                        <span class="badge bg-success">⭐ {{ car.SafetyRating }} NCAP Safety</span>
+                        <span class="badge bg-warning text-dark">{{ car.Mileage }} km/l Mileage</span>
+                        <span class="badge bg-secondary">{{ car.FuelType }}</span>
+                        <span class="badge bg-info text-dark">{{ car.Transmission }}</span>
+                      </div>
+                      
+                      <div class="row g-3 border-top pt-3 text-secondary mb-4">
+                        <div class="col-6">
+                          <small class="d-block text-muted">Ex-Showroom Price</small>
+                          <strong class="text-success fs-5">₹{{ car.Price }} Lakh</strong>
+                        </div>
+                        <div class="col-6">
+                          <small class="d-block text-muted">Seating Capacity</small>
+                          <strong class="text-dark">{{ car.SeatingCapacity }} Seater</strong>
+                        </div>
+                        <div class="col-6">
+                          <small class="d-block text-muted">Airbag Count</small>
+                          <strong class="text-dark">{{ car.Airbags }} Airbags</strong>
+                        </div>
+                        <div class="col-6">
+                          <small class="d-block text-muted">Buyback Availability</small>
+                          <strong class="text-dark">{% if car.BuyBackAvailable|lower in ['yes', 'true', '1'] %}Yes{% else %}No{% endif %}</strong>
+                        </div>
+                      </div>
+                      
+                      <!-- Dealer Contact info -->
+                      <div class="alert alert-light border d-flex gap-2 align-items-start mb-0" style="background-color: #f8fafc; border-radius: 8px;">
+                        <i class="bi bi-geo-alt-fill text-primary fs-5 mt-1"></i>
+                        <div>
+                          <h6 class="fw-bold mb-1 text-dark">Available At: {{ car.Dealer }}</h6>
+                          <p class="mb-1 text-secondary small" style="line-height: 1.4;">
+                            <strong>Address:</strong> {{ car.DealerAddress }}
+                          </p>
+                          <p class="mb-0 text-secondary small">
+                            <i class="bi bi-telephone-fill me-1 text-primary"></i> <strong>Call:</strong> {{ car.DealerPhone }} &nbsp;|&nbsp; 
+                            <i class="bi bi-envelope-fill me-1 text-primary"></i> <strong>Email:</strong> {{ car.DealerEmail }}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer border-0 pb-4 justify-content-center">
+                  {% if session.username %}
+                    <a href="{{ url_for('predict_form') }}" class="btn btn-primary px-4 rounded-3 d-flex align-items-center gap-2">
+                      <i class="bi bi-magic"></i> Make AI Recommendation
+                    </a>
+                  {% else %}
+                    <a href="{{ url_for('login') }}" class="btn btn-primary px-4 rounded-3 d-flex align-items-center gap-2">
+                      <i class="bi bi-magic"></i> Login to Get AI Matches
+                    </a>
+                  {% endif %}
+                  <button type="button" class="btn btn-outline-secondary px-4 rounded-3" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white-50 text-center py-4 border-top border-secondary mt-5">
+    <div class="container small">
+      <p class="mb-0">&copy; 2026 DriveWise AI Automotive Platform. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

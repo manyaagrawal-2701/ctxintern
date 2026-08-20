@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recommendation Results | DriveWise AI</title>
+  <!-- Google Fonts: Outfit -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='cssstyle.css') }}">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="{{ url_for('home') }}">
+        <i class="bi bi-car-front-fill text-primary"></i>
+        <span>DriveWise</span>
+      </a>
+      <div class="d-flex align-items-center gap-2">
+        <span class="text-secondary small fw-bold me-2"><i class="bi bi-person-circle text-primary"></i> {{ session.username }}</span>
+        <a class="btn btn-nav d-flex align-items-center gap-1" href="{{ url_for('predict_form') }}">
+          <i class="bi bi-magic text-primary"></i>
+          <span>Get Match</span>
+        </a>
+        <a class="btn btn-nav d-flex align-items-center gap-1" href="{{ url_for('dashboard') }}">
+          <i class="bi bi-bar-chart-fill"></i>
+          <span>Dashboard</span>
+        </a>
+        <a class="btn btn-nav d-flex align-items-center gap-1" href="{{ url_for('history') }}">
+          <i class="bi bi-clock-history"></i>
+          <span>History</span>
+        </a>
+        <a class="btn btn-outline-danger btn-sm rounded-3 px-3 py-1 fw-bold text-decoration-none" href="{{ url_for('logout') }}">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <div class="row g-4">
+      <!-- Left Panel: Customer Summary & Predicted Segment -->
+      <div class="col-lg-4">
+        <!-- Segment Banner Card -->
+        <div class="card card-segment shadow-sm border-0 mb-4 text-center text-white" style="background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);">
+          <div class="card-body py-3">
+            <div class="mb-2">
+              <h6 class="text-uppercase tracking-wider text-white-50 mb-1" style="font-size: 0.75rem;">Suitable Category (ML)</h6>
+              <h3 class="fw-extrabold mb-0 text-white">{{ segment }}</h3>
+            </div>
+            <div style="border-top: 1px solid rgba(255, 255, 255, 0.15); margin: 10px 0;"></div>
+            <div>
+              <h6 class="text-uppercase tracking-wider text-white-50 mb-1" style="font-size: 0.75rem;">Your Preference</h6>
+              <h3 class="fw-extrabold mb-0 text-white">{{ customer.PreferredVehicleType }}</h3>
+            </div>
+            <div style="border-top: 1px solid rgba(255, 255, 255, 0.15); margin: 10px 0;"></div>
+            <div class="px-2">
+              {% if segment.lower() != customer.PreferredVehicleType.lower() %}
+                <p class="mb-0 text-white-50 text-start" style="font-size: 0.78rem; line-height: 1.4;">
+                  <i class="bi bi-info-circle-fill me-1 text-white"></i> The ML model recommends an <strong>{{ segment }}</strong> based on demographic statistics (age, income, family size), but we prioritized <strong>{{ customer.PreferredVehicleType }}s</strong> to match your personal preference.
+                </p>
+              {% else %}
+                <p class="mb-0 text-white-50 text-start" style="font-size: 0.78rem; line-height: 1.4;">
+                  <i class="bi bi-check-circle-fill me-1 text-white"></i> Both your demographic profile and personal preference align on <strong>{{ segment }}</strong>.
+                </p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+
+        <!-- Customer details card -->
+        <div class="page-panel">
+          <h5 class="mb-3 text-dark fw-bold border-bottom pb-2">
+            <i class="bi bi-person-circle text-primary"></i> Profile Summary
+          </h5>
+          <table class="table table-borderless table-sm small text-secondary">
+            <tbody>
+              <tr>
+                <th class="fw-medium text-dark">Age / Gender:</th>
+                <td>{{ customer.Age }} years / {{ customer.Gender }}</td>
+              </tr>
+              <tr>
+                <th class="fw-medium text-dark">Marital Status:</th>
+                <td>{{ customer.MaritalStatus }}</td>
+              </tr>
+              <tr>
+                <th class="fw-medium text-dark">City / Location:</th>
+                <td>{{ customer.City }}</td>
+              </tr>
+              <tr>
+                <th class="fw-medium text-dark">Monthly Income:</th>
+                <td>
+                  {% if customer.Min_Monthly_Income == customer.Max_Monthly_Income %}
+                    ₹{{ customer.Min_Monthly_Income|int }}
+                  {% else %}
+                    ₹{{ customer.Min_Monthly_Income|int }} - ₹{{ customer.Max_Monthly_Income|int }}
+                  {% endif %}
+                  (Annual: ₹{{ customer.AnnualIncome|int }})
+                </td>
+              </tr>
+              <tr>
+                <th class="fw-medium text-dark">Family Size:</th>
+                <td>{{ customer.FamilySize }} Persons</td>
+              </tr>
+              <tr>
+                <th class="fw-medium text-dark">Budget Limit:</th>
+                <td class="text-success fw-bold">₹{{ customer.Budget }} Lakh</td>
+              </tr>
+              <tr>
+                <th class="fw-medium text-dark">Transmission:</th>
+                <td>{{ customer.Transmission }}</td>
+              </tr>
+              <tr>
+                <th class="fw-medium text-dark">Fuel / Range Pref:</th>
+                <td>{{ customer.FuelPreference }}</td>
+              </tr>
+              <tr>
+                <th class="fw-medium text-dark">Driving Experience:</th>
+                <td>{{ customer.DrivingExperience }} Years</td>
+              </tr>
+              <tr>
+                <th class="fw-medium text-dark">Daily Distance:</th>
+                <td>{{ customer.DailyRunningKM }} KM/day</td>
+              </tr>
+            </tbody>
+          </table>
+          <a class="btn btn-outline-primary btn-sm w-100 mt-3" href="{{ url_for('predict_form') }}">
+            <i class="bi bi-arrow-left"></i> Re-Calculate Matches
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Panel: Recommendation Cards -->
+      <div class="col-lg-8">
+        <h3 class="mb-4 text-dark fw-bold d-flex align-items-center gap-2">
+          <i class="bi bi-award text-success"></i>
+          <span>Top Recommended Car Models</span>
+        </h3>
+
+        {% for car in cars %}
+          <div class="card recommendation-card shadow-sm border-0 mb-4 overflow-hidden">
+            <div class="row g-0">
+              <!-- Left Column: Car Image -->
+              <div class="col-md-5 col-lg-4">
+                <div class="car-image-container h-100 position-relative" style="min-height: 200px; background-color: #ffffff;">
+                  <img src="{{ url_for('static', filename='images/cars/' + car.Image) }}" 
+                       alt="{{ car.Brand }} {{ car.Model }}" 
+                       class="w-100 h-100 object-fit-contain car-image p-2"
+                       onerror="this.src='{{ url_for('static', filename='images/cars/fallback_suv.jpg') }}';">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-3 px-3 py-2 shadow-sm" style="font-size: 0.8rem;">{{ car.Segment }}</span>
+                </div>
+              </div>
+              
+              <!-- Right Column: Specs and Reason -->
+              <div class="col-md-7 col-lg-8">
+                <div class="card-body p-4">
+                  <div class="d-flex justify-content-between align-items-start mb-3">
+                    <div>
+                      <h4 class="fw-bold mb-1 text-dark d-flex align-items-center flex-wrap gap-2">
+                        <span>{{ car.Brand }} {{ car.Model }}</span>
+                        <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-10 px-2 py-1" style="font-size: 0.78rem; font-weight: 700;"><i class="bi bi-patch-check-fill"></i> {{ car.Score|int }}% Match</span>
+                      </h4>
+                      <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-info-subtle text-info-emphasis px-2 py-1"><i class="bi bi-shop"></i> {{ car.Dealer }}</span>
+                        <span class="badge bg-light text-dark px-2 py-1">⭐ {{ car.SafetyRating }} NCAP</span>
+                        {% if car.BuyBackAvailable|lower in ['yes', 'true', '1'] %}
+                          <span class="badge bg-success-subtle text-success px-2 py-1"><i class="bi bi-check-circle"></i> Buyback</span>
+                        {% endif %}
+                      </div>
+                    </div>
+                    <div class="text-end">
+                      <h3 class="text-success fw-bold mb-0">₹{{ car.Price }} <span class="fs-6 text-muted">Lakh</span></h3>
+                      <p class="text-muted small mb-0">Ex-Showroom Price</p>
+                    </div>
+                  </div>
+
+                  <hr class="text-muted">
+
+                  <div class="row g-3 text-secondary mb-3">
+                    <div class="col-6 col-md-3">
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="bi bi-fuel-pump-fill text-primary"></i>
+                        <div>
+                          <small class="d-block text-muted">Fuel Type</small>
+                          <span class="fw-semibold text-dark">{{ car.FuelType }}</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="bi bi-gear-fill text-primary"></i>
+                        <div>
+                          <small class="d-block text-muted">Transmission</small>
+                          <span class="fw-semibold text-dark">{{ car.Transmission }}</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="bi bi-speedometer2 text-primary"></i>
+                        <div>
+                          <small class="d-block text-muted">Efficiency</small>
+                          <span class="fw-semibold text-dark">{{ car.Mileage }} km/l</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="bi bi-people-fill text-primary"></i>
+                        <div>
+                          <small class="d-block text-muted">Seating</small>
+                          <span class="fw-semibold text-dark">{{ car.SeatingCapacity }} Seater</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Why this matches description -->
+                  <div class="alert alert-match border-0 d-flex gap-2 align-items-start mb-3">
+                    <i class="bi bi-check-circle-fill text-success fs-5 mt-1"></i>
+                    <div>
+                      <h6 class="fw-bold mb-1 text-success">Why this matches:</h6>
+                      <p class="mb-0 text-dark small" style="line-height: 1.5;">{{ car.Reason }}</p>
+                    </div>
+                  </div>
+
+                  <!-- Dealership Location & Contact Info -->
+                  <div class="alert alert-light border d-flex gap-2 align-items-start mb-0" style="background-color: #f8fafc; border-radius: 8px;">
+                    <i class="bi bi-geo-alt-fill text-primary fs-5 mt-1"></i>
+                    <div>
+                      <h6 class="fw-bold mb-1 text-dark">Available At: {{ car.Dealer }}</h6>
+                      <p class="mb-1 text-secondary small" style="line-height: 1.4;">
+                        <strong>Address:</strong> {{ car.DealerAddress }}
+                      </p>
+                      <p class="mb-0 text-secondary small">
+                        <i class="bi bi-telephone-fill me-1 text-primary"></i> <strong>Call:</strong> {{ car.DealerPhone }} &nbsp;|&nbsp; 
+                        <i class="bi bi-envelope-fill me-1 text-primary"></i> <strong>Email:</strong> {{ car.DealerEmail }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white-50 text-center py-4 border-top border-secondary mt-5">
+    <div class="container small">
+      <p class="mb-0">&copy; 2026 DriveWise AI Automotive Platform. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

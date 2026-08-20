@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prediction History Log | DriveWise</title>
+  <!-- Google Fonts: Outfit -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='cssstyle.css') }}">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="{{ url_for('home') }}">
+        <i class="bi bi-car-front-fill text-primary"></i>
+        <span>DriveWise</span>
+      </a>
+      <div class="d-flex align-items-center gap-2">
+        <span class="text-secondary small fw-bold me-2"><i class="bi bi-person-circle text-primary"></i> {{ session.username }}</span>
+        <a class="btn btn-nav d-flex align-items-center gap-1" href="{{ url_for('predict_form') }}">
+          <i class="bi bi-magic text-primary"></i>
+          <span>Get Match</span>
+        </a>
+        <a class="btn btn-nav d-flex align-items-center gap-1" href="{{ url_for('dashboard') }}">
+          <i class="bi bi-bar-chart-fill"></i>
+          <span>Dashboard</span>
+        </a>
+        <a class="btn btn-nav active d-flex align-items-center gap-1" href="{{ url_for('history') }}">
+          <i class="bi bi-clock-history"></i>
+          <span>History</span>
+        </a>
+        <a class="btn btn-outline-danger btn-sm rounded-3 px-3 py-1 fw-bold text-decoration-none" href="{{ url_for('logout') }}">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="alert alert-{{ category }} alert-dismissible fade show border-0 rounded-3 mb-4 shadow-sm" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap gap-2">
+      <div>
+        <h2 class="fw-bold mb-1 text-dark">Recommendation History</h2>
+        <p class="text-secondary mb-0">Full record of all customer profiles and recommended matching models.</p>
+      </div>
+      <div class="d-flex gap-2">
+        <form action="{{ url_for('clear_history') }}" method="post" onsubmit="return confirm('Are you sure you want to clear all your prediction history? This action is permanent.');">
+          <button type="submit" class="btn btn-outline-danger d-flex align-items-center gap-2">
+            <i class="bi bi-trash"></i> Clear My History
+          </button>
+        </form>
+        <a href="{{ url_for('predict_form') }}" class="btn btn-primary d-flex align-items-center gap-2">
+          <i class="bi bi-magic"></i> New Recommendation
+        </a>
+      </div>
+    </div>
+
+    <section class="page-panel p-0 overflow-hidden">
+      {% if rows %}
+        <div class="table-responsive">
+          <table class="table table-hover table-striped align-middle mb-0">
+            <thead class="table-dark">
+              <tr>
+                <th class="ps-4">ID</th>
+                <th>Date / Time</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>City</th>
+                <th>Budget Limit</th>
+                <th>Fuel Preference</th>
+                <th>Transmission</th>
+                <th>Predicted Segment</th>
+                <th>Recommended Model</th>
+                <th class="pe-4 text-end">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for row in rows %}
+                <tr>
+                  <td class="ps-4 text-muted fw-bold">#{{ row.id }}</td>
+                  <td class="small">{{ row.created_at }}</td>
+                  <td>{{ row.age }}</td>
+                  <td>{{ row.gender }}</td>
+                  <td>{{ row.city }}</td>
+                  <td class="fw-semibold">₹{{ row.budget }} Lakh</td>
+                  <td>{{ row.fuel_preference }}</td>
+                  <td>{{ row.transmission }}</td>
+                  <td><span class="badge bg-primary px-2 py-1">{{ row.predicted_segment }}</span></td>
+                  <td class="fw-semibold text-dark">{{ row.recommended_brand }} {{ row.recommended_model }}</td>
+                  <td class="pe-4 text-end text-success fw-bold">₹{{ row.price }} Lakh</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      {% else %}
+        <div class="alert alert-light text-center py-5 mb-0">
+          <i class="bi bi-clock-history text-muted fs-1 mb-3 d-block"></i>
+          <h5 class="fw-bold text-dark">No History Logged</h5>
+          <p class="text-secondary mb-4">No recommendations have been calculated or stored in the database yet.</p>
+          <a href="{{ url_for('predict_form') }}" class="btn btn-primary"><i class="bi bi-magic"></i> Make First Calculation</a>
+        </div>
+      {% endif %}
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white-50 text-center py-4 border-top border-secondary mt-5">
+    <div class="container small">
+      <p class="mb-0">&copy; 2026 DriveWise AI Automotive Platform. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
