@@ -1,0 +1,1806 @@
+2026-07-03 17:03:33,375 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-03 17:03:33,375 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-03 17:03:33,375 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-03 17:03:33,402 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-03 17:03:33,402 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-03 17:03:33,415 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-03 17:03:34,201 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-03 17:03:34,201 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2026-07-03 17:03:34,344 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-03 17:03:36,612 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-03 17:03:36,612 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-03 17:03:36,612 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-03 17:03:36,612 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-03 17:03:36,612 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-03 17:03:36,612 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-03 17:03:36,761 WARNING werkzeug:  * Debugger is active!
+2026-07-03 17:03:36,765 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-03 17:06:09,330 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:06:09] "GET / HTTP/1.1" 200 -
+2026-07-03 17:06:09,331 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\encodings\\unicode_escape.py', reloading
+2026-07-03 17:06:09,626 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-03 17:06:12,220 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-03 17:06:12,220 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-03 17:06:12,221 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-03 17:06:12,221 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-03 17:06:12,221 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-03 17:06:12,222 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-03 17:06:12,317 WARNING werkzeug:  * Debugger is active!
+2026-07-03 17:06:12,322 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-03 17:06:12,556 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:06:12] "GET /static/cssstyle.css HTTP/1.1" 200 -
+2026-07-03 17:06:12,892 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:06:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-07-03 17:06:50,205 ERROR __main__: Model prediction failed; using rule fallback.
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\CarRecommendationSystem\app.py", line 110, in _predict_segment
+    transformed = self.preprocessor.transform(frame)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\compose\_column_transformer.py", line 1088, in transform
+    raise ValueError(f"columns are missing: {diff}")
+ValueError: columns are missing: {'Fuel', 'Lead Source', 'BuyBackAvailable', 'Qualification', 'Road Tax', 'Dealer Visit Status', 'ExShowroomPrice', 'Residence', 'Dealer', 'Mileage (km/ltr)', 'CUSTOMER ID', 'Insurance', 'Budget (\u20b9 Lakh)', 'Monthly Income Slab', 'Family Size', 'Airbags', 'Registration', 'Purchase Probability (%)', 'Profession', 'EMI (5years)', 'Test Drive Status', 'SafetyRating', 'Brand', 'Fuel Preference', 'Reason for Purchase', 'Income_to_Budget', 'OnRoadPrice', 'Marital Status', 'Name', 'Purchase Timeline', 'Segment', 'EMI Eligibility', 'Model'}
+2026-07-03 17:06:50,221 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\sklearn\\utils\\_set_output.py', reloading
+2026-07-03 17:06:50,271 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\sklearn\\compose\\_column_transformer.py', reloading
+2026-07-03 17:06:50,610 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-03 17:06:52,877 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-03 17:06:52,878 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-03 17:06:52,878 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-03 17:06:52,878 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-03 17:06:52,878 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-03 17:06:52,879 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-03 17:06:52,987 WARNING werkzeug:  * Debugger is active!
+2026-07-03 17:06:52,987 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-03 17:06:53,082 ERROR __main__: Model prediction failed; using rule fallback.
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\CarRecommendationSystem\app.py", line 110, in _predict_segment
+    transformed = self.preprocessor.transform(frame)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\compose\_column_transformer.py", line 1088, in transform
+    raise ValueError(f"columns are missing: {diff}")
+ValueError: columns are missing: {'BuyBackAvailable', 'Family Size', 'Purchase Timeline', 'Marital Status', 'Model', 'EMI (5years)', 'EMI Eligibility', 'Fuel Preference', 'Budget (\u20b9 Lakh)', 'Test Drive Status', 'Purchase Probability (%)', 'SafetyRating', 'Dealer', 'Profession', 'Airbags', 'Dealer Visit Status', 'Qualification', 'Residence', 'OnRoadPrice', 'Road Tax', 'ExShowroomPrice', 'Brand', 'CUSTOMER ID', 'Registration', 'Name', 'Fuel', 'Mileage (km/ltr)', 'Monthly Income Slab', 'Lead Source', 'Reason for Purchase', 'Income_to_Budget', 'Segment', 'Insurance'}
+2026-07-03 17:06:53,236 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:06:53] "POST /predict HTTP/1.1" 200 -
+2026-07-03 17:06:53,719 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:06:53] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-03 17:07:20,074 ERROR __main__: Model prediction failed; using rule fallback.
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\CarRecommendationSystem\app.py", line 110, in _predict_segment
+    transformed = self.preprocessor.transform(frame)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\compose\_column_transformer.py", line 1088, in transform
+    raise ValueError(f"columns are missing: {diff}")
+ValueError: columns are missing: {'BuyBackAvailable', 'Family Size', 'Purchase Timeline', 'Marital Status', 'Model', 'EMI (5years)', 'EMI Eligibility', 'Fuel Preference', 'Budget (\u20b9 Lakh)', 'Test Drive Status', 'Purchase Probability (%)', 'SafetyRating', 'Dealer', 'Profession', 'Airbags', 'Dealer Visit Status', 'Qualification', 'Residence', 'OnRoadPrice', 'Road Tax', 'ExShowroomPrice', 'Brand', 'CUSTOMER ID', 'Registration', 'Name', 'Fuel', 'Mileage (km/ltr)', 'Monthly Income Slab', 'Lead Source', 'Reason for Purchase', 'Income_to_Budget', 'Segment', 'Insurance'}
+2026-07-03 17:07:20,206 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:07:20] "POST /predict HTTP/1.1" 200 -
+2026-07-03 17:07:20,387 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:07:20] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-03 17:07:26,979 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:07:26] "GET / HTTP/1.1" 200 -
+2026-07-03 17:07:27,213 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:07:27] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-03 17:07:48,954 ERROR __main__: Model prediction failed; using rule fallback.
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\CarRecommendationSystem\app.py", line 110, in _predict_segment
+    transformed = self.preprocessor.transform(frame)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\compose\_column_transformer.py", line 1088, in transform
+    raise ValueError(f"columns are missing: {diff}")
+ValueError: columns are missing: {'BuyBackAvailable', 'Family Size', 'Purchase Timeline', 'Marital Status', 'Model', 'EMI (5years)', 'EMI Eligibility', 'Fuel Preference', 'Budget (\u20b9 Lakh)', 'Test Drive Status', 'Purchase Probability (%)', 'SafetyRating', 'Dealer', 'Profession', 'Airbags', 'Dealer Visit Status', 'Qualification', 'Residence', 'OnRoadPrice', 'Road Tax', 'ExShowroomPrice', 'Brand', 'CUSTOMER ID', 'Registration', 'Name', 'Fuel', 'Mileage (km/ltr)', 'Monthly Income Slab', 'Lead Source', 'Reason for Purchase', 'Income_to_Budget', 'Segment', 'Insurance'}
+2026-07-03 17:07:49,111 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:07:49] "POST /predict HTTP/1.1" 200 -
+2026-07-03 17:07:49,264 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:07:49] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-03 17:08:01,892 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:08:01] "GET / HTTP/1.1" 200 -
+2026-07-03 17:08:01,938 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:08:01] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-03 17:08:04,817 ERROR __main__: Model prediction failed; using rule fallback.
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\CarRecommendationSystem\app.py", line 110, in _predict_segment
+    transformed = self.preprocessor.transform(frame)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\compose\_column_transformer.py", line 1088, in transform
+    raise ValueError(f"columns are missing: {diff}")
+ValueError: columns are missing: {'BuyBackAvailable', 'Family Size', 'Purchase Timeline', 'Marital Status', 'Model', 'EMI (5years)', 'EMI Eligibility', 'Fuel Preference', 'Budget (\u20b9 Lakh)', 'Test Drive Status', 'Purchase Probability (%)', 'SafetyRating', 'Dealer', 'Profession', 'Airbags', 'Dealer Visit Status', 'Qualification', 'Residence', 'OnRoadPrice', 'Road Tax', 'ExShowroomPrice', 'Brand', 'CUSTOMER ID', 'Registration', 'Name', 'Fuel', 'Mileage (km/ltr)', 'Monthly Income Slab', 'Lead Source', 'Reason for Purchase', 'Income_to_Budget', 'Segment', 'Insurance'}
+2026-07-03 17:08:04,923 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:08:04] "POST /predict HTTP/1.1" 200 -
+2026-07-03 17:08:05,123 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:08:05] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-03 17:08:30,903 ERROR __main__: Model prediction failed; using rule fallback.
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\CarRecommendationSystem\app.py", line 110, in _predict_segment
+    transformed = self.preprocessor.transform(frame)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\compose\_column_transformer.py", line 1088, in transform
+    raise ValueError(f"columns are missing: {diff}")
+ValueError: columns are missing: {'BuyBackAvailable', 'Family Size', 'Purchase Timeline', 'Marital Status', 'Model', 'EMI (5years)', 'EMI Eligibility', 'Fuel Preference', 'Budget (\u20b9 Lakh)', 'Test Drive Status', 'Purchase Probability (%)', 'SafetyRating', 'Dealer', 'Profession', 'Airbags', 'Dealer Visit Status', 'Qualification', 'Residence', 'OnRoadPrice', 'Road Tax', 'ExShowroomPrice', 'Brand', 'CUSTOMER ID', 'Registration', 'Name', 'Fuel', 'Mileage (km/ltr)', 'Monthly Income Slab', 'Lead Source', 'Reason for Purchase', 'Income_to_Budget', 'Segment', 'Insurance'}
+2026-07-03 17:08:31,035 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:08:31] "POST /predict HTTP/1.1" 200 -
+2026-07-03 17:08:31,071 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:08:31] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-03 17:08:45,681 ERROR __main__: Model prediction failed; using rule fallback.
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\CarRecommendationSystem\app.py", line 110, in _predict_segment
+    transformed = self.preprocessor.transform(frame)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\compose\_column_transformer.py", line 1088, in transform
+    raise ValueError(f"columns are missing: {diff}")
+ValueError: columns are missing: {'BuyBackAvailable', 'Family Size', 'Purchase Timeline', 'Marital Status', 'Model', 'EMI (5years)', 'EMI Eligibility', 'Fuel Preference', 'Budget (\u20b9 Lakh)', 'Test Drive Status', 'Purchase Probability (%)', 'SafetyRating', 'Dealer', 'Profession', 'Airbags', 'Dealer Visit Status', 'Qualification', 'Residence', 'OnRoadPrice', 'Road Tax', 'ExShowroomPrice', 'Brand', 'CUSTOMER ID', 'Registration', 'Name', 'Fuel', 'Mileage (km/ltr)', 'Monthly Income Slab', 'Lead Source', 'Reason for Purchase', 'Income_to_Budget', 'Segment', 'Insurance'}
+2026-07-03 17:08:45,823 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:08:45] "POST /predict HTTP/1.1" 200 -
+2026-07-03 17:08:45,991 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:08:45] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-03 17:09:14,182 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-03 17:09:14,187 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-03 17:09:14,187 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-03 17:09:14,187 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-03 17:09:14,187 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-03 17:09:14,187 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-03 17:09:14,298 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-03 17:09:14,298 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2026-07-03 17:09:14,298 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-03 17:09:16,460 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-03 17:09:16,464 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-03 17:09:16,464 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-03 17:09:16,464 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-03 17:09:16,464 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-03 17:09:16,464 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-03 17:09:16,538 WARNING werkzeug:  * Debugger is active!
+2026-07-03 17:09:16,553 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-03 17:09:26,491 ERROR __main__: Model prediction failed; using rule fallback.
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\CarRecommendationSystem\app.py", line 110, in _predict_segment
+    transformed = self.preprocessor.transform(frame)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\compose\_column_transformer.py", line 1088, in transform
+    raise ValueError(f"columns are missing: {diff}")
+ValueError: columns are missing: {'Purchase Timeline', 'Profession', 'Insurance', 'Purchase Probability (%)', 'Road Tax', 'Fuel', 'Dealer Visit Status', 'EMI Eligibility', 'Family Size', 'Monthly Income Slab', 'SafetyRating', 'Lead Source', 'Brand', 'Qualification', 'Fuel Preference', 'Test Drive Status', 'Segment', 'Dealer', 'EMI (5years)', 'Residence', 'CUSTOMER ID', 'Income_to_Budget', 'Marital Status', 'Reason for Purchase', 'OnRoadPrice', 'Airbags', 'ExShowroomPrice', 'Mileage (km/ltr)', 'Model', 'Budget (\u20b9 Lakh)', 'Registration', 'BuyBackAvailable', 'Name'}
+2026-07-03 17:09:26,625 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:09:26] "POST /predict HTTP/1.1" 200 -
+2026-07-03 17:09:26,842 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:09:26] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-03 17:09:29,235 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:09:29] "GET / HTTP/1.1" 200 -
+2026-07-03 17:09:29,538 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:09:29] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-03 17:09:30,882 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\sqlite3\\__init__.py', reloading
+2026-07-03 17:09:30,902 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\sqlite3\\dbapi2.py', reloading
+2026-07-03 17:09:31,172 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-03 17:09:33,653 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-03 17:09:33,653 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-03 17:09:33,653 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-03 17:09:33,653 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-03 17:09:33,653 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-03 17:09:33,653 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-03 17:09:33,753 WARNING werkzeug:  * Debugger is active!
+2026-07-03 17:09:33,758 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-03 17:09:35,236 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:09:35] "GET /dashboard HTTP/1.1" 200 -
+2026-07-03 17:09:35,239 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:09:35] "GET /dashboard HTTP/1.1" 200 -
+2026-07-03 17:09:35,244 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:09:35] "GET /dashboard HTTP/1.1" 200 -
+2026-07-03 17:09:35,426 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:09:35] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-03 17:09:45,830 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:09:45] "GET /history HTTP/1.1" 200 -
+2026-07-03 17:09:45,861 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:09:45] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-03 17:10:03,914 ERROR __main__: Model prediction failed; using rule fallback.
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\CarRecommendationSystem\app.py", line 110, in _predict_segment
+    transformed = self.preprocessor.transform(frame)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\compose\_column_transformer.py", line 1088, in transform
+    raise ValueError(f"columns are missing: {diff}")
+ValueError: columns are missing: {'Family Size', 'Mileage (km/ltr)', 'Road Tax', 'Model', 'Budget (\u20b9 Lakh)', 'Purchase Timeline', 'Dealer Visit Status', 'Dealer', 'Profession', 'Monthly Income Slab', 'BuyBackAvailable', 'Lead Source', 'OnRoadPrice', 'Test Drive Status', 'SafetyRating', 'CUSTOMER ID', 'Insurance', 'EMI (5years)', 'EMI Eligibility', 'Qualification', 'Purchase Probability (%)', 'Residence', 'Reason for Purchase', 'Name', 'Brand', 'Segment', 'ExShowroomPrice', 'Marital Status', 'Airbags', 'Fuel Preference', 'Registration', 'Income_to_Budget', 'Fuel'}
+2026-07-03 17:10:04,050 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:10:04] "POST /predict HTTP/1.1" 200 -
+2026-07-03 17:10:04,218 INFO werkzeug: 127.0.0.1 - - [03/Jul/2026 17:10:04] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-03 17:11:37,421 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\run.py', reloading
+2026-07-03 17:11:37,799 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-03 17:11:40,601 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-03 17:11:40,602 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-03 17:11:40,602 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-03 17:11:40,602 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-03 17:11:40,602 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-03 17:11:40,604 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-03 17:11:40,722 WARNING werkzeug:  * Debugger is active!
+2026-07-03 17:11:40,722 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-03 17:14:48,709 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\app.py', reloading
+2026-07-03 17:14:48,946 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-03 17:14:51,663 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-03 17:14:51,663 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-03 17:14:51,663 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-03 17:14:51,663 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-03 17:14:51,663 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-03 17:14:51,663 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-03 17:14:51,767 WARNING werkzeug:  * Debugger is active!
+2026-07-03 17:14:51,767 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-03 17:15:01,577 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\app.py', reloading
+2026-07-03 17:15:01,578 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\app.py', reloading
+2026-07-03 17:15:01,578 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\app.py', reloading
+2026-07-03 17:15:01,828 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-03 17:15:04,025 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-03 17:15:04,025 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-03 17:15:04,025 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-03 17:15:04,025 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-03 17:15:04,026 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-03 17:15:04,026 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-03 17:15:04,138 WARNING werkzeug:  * Debugger is active!
+2026-07-03 17:15:04,144 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-03 17:15:11,649 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\app.py', reloading
+2026-07-03 17:15:11,863 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-03 17:15:14,170 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-03 17:15:14,170 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-03 17:15:14,170 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-03 17:15:14,170 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-03 17:15:14,170 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-03 17:15:14,170 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-03 17:15:14,304 WARNING werkzeug:  * Debugger is active!
+2026-07-03 17:15:14,304 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-03 17:15:14,451 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\app.py', reloading
+2026-07-03 17:15:14,657 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-04 11:49:47,776 INFO core.dataloader: Customer dataset loaded successfully. Shape: (1500, 21)
+2026-07-04 11:49:47,844 INFO core.dataloader: Car dataset loaded successfully. Shape: (43, 16)
+2026-07-04 11:49:47,911 INFO core.dataloader: Dataset validation completed.
+2026-07-04 11:49:47,959 INFO core.dataloader: Datasets merged successfully. Shape: (5305, 37)
+2026-07-04 11:49:48,184 INFO root: Training Random Forest...
+2026-07-04 11:49:52,604 INFO root: Training Gradient Boosting...
+2026-07-04 11:50:01,476 INFO root: Training SVM...
+2026-07-04 11:50:05,310 INFO root: Best model saved as C:\Users\dell\Desktop\CarRecommendationSystem\models\best_model.pkl
+2026-07-04 11:52:57,588 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-04 11:52:57,588 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2026-07-04 11:52:57,592 INFO werkzeug:  * Restarting with stat
+2026-07-04 11:53:03,220 WARNING werkzeug:  * Debugger is active!
+2026-07-04 11:53:03,220 INFO werkzeug:  * Debugger PIN: 796-099-164
+2026-07-04 11:53:40,142 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:53:40] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-07-04 11:53:40,194 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:53:40] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-07-04 11:53:40,196 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:53:40] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-07-04 11:53:40,402 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:53:40] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=CyLcPkLvKzPKgaWWieDc HTTP/1.1" 200 -
+2026-07-04 11:53:40,439 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:53:40] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-07-04 11:53:42,743 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:53:42] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-07-04 11:53:42,777 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:53:42] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-07-04 11:53:42,781 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:53:42] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-07-04 11:53:42,821 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:53:42] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=CyLcPkLvKzPKgaWWieDc HTTP/1.1[0m" 304 -
+2026-07-04 11:53:42,837 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:53:42] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-07-04 11:54:04,474 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:54:04] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-07-04 11:54:04,546 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:54:04] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-07-04 11:54:04,677 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:54:04] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-07-04 11:54:05,205 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:54:05] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=CyLcPkLvKzPKgaWWieDc HTTP/1.1" 200 -
+2026-07-04 11:54:05,459 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:54:05] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-07-04 11:56:19,546 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:56:19] "GET / HTTP/1.1" 200 -
+2026-07-04 11:56:19,613 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:56:19] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-04 11:56:19,701 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:56:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-07-04 11:56:40,976 ERROR __main__: Model prediction failed; using rule fallback.
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\CarRecommendationSystem\app.py", line 110, in _predict_segment
+    transformed = self.preprocessor.transform(frame)
+  File "C:\Users\dell\anaconda3\envs\cv-env\lib\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\dell\anaconda3\envs\cv-env\lib\site-packages\sklearn\compose\_column_transformer.py", line 1085, in transform
+    raise ValueError(f"columns are missing: {diff}")
+ValueError: columns are missing: {'PurchaseTimeline', 'Profession', 'DealerVisitStatus', 'CUSTOMER ID', 'TestDriveStatus', 'PurchaseProbability', 'Qualification', 'IncomeToBudgetRatio', 'LeadSource', 'Name', 'ReasonForPurchase', 'LargeFamily', 'Residence', 'EMI Eligibility'}
+2026-07-04 11:56:41,317 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:56:41] "POST /predict HTTP/1.1" 200 -
+2026-07-04 11:56:41,392 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:56:41] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-04 11:57:09,003 ERROR __main__: Model prediction failed; using rule fallback.
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\CarRecommendationSystem\app.py", line 110, in _predict_segment
+    transformed = self.preprocessor.transform(frame)
+  File "C:\Users\dell\anaconda3\envs\cv-env\lib\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\dell\anaconda3\envs\cv-env\lib\site-packages\sklearn\compose\_column_transformer.py", line 1085, in transform
+    raise ValueError(f"columns are missing: {diff}")
+ValueError: columns are missing: {'PurchaseTimeline', 'Profession', 'DealerVisitStatus', 'CUSTOMER ID', 'TestDriveStatus', 'PurchaseProbability', 'Qualification', 'IncomeToBudgetRatio', 'LeadSource', 'Name', 'ReasonForPurchase', 'LargeFamily', 'Residence', 'EMI Eligibility'}
+2026-07-04 11:57:09,096 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:57:09] "POST /predict HTTP/1.1" 200 -
+2026-07-04 11:57:09,314 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:57:09] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-04 11:57:20,225 ERROR __main__: Model prediction failed; using rule fallback.
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\CarRecommendationSystem\app.py", line 110, in _predict_segment
+    transformed = self.preprocessor.transform(frame)
+  File "C:\Users\dell\anaconda3\envs\cv-env\lib\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\dell\anaconda3\envs\cv-env\lib\site-packages\sklearn\compose\_column_transformer.py", line 1085, in transform
+    raise ValueError(f"columns are missing: {diff}")
+ValueError: columns are missing: {'PurchaseTimeline', 'Profession', 'DealerVisitStatus', 'CUSTOMER ID', 'TestDriveStatus', 'PurchaseProbability', 'Qualification', 'IncomeToBudgetRatio', 'LeadSource', 'Name', 'ReasonForPurchase', 'LargeFamily', 'Residence', 'EMI Eligibility'}
+2026-07-04 11:57:20,385 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:57:20] "POST /predict HTTP/1.1" 200 -
+2026-07-04 11:57:20,466 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:57:20] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-04 11:57:27,111 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:57:27] "GET /history HTTP/1.1" 200 -
+2026-07-04 11:57:27,198 INFO werkzeug: 127.0.0.1 - - [04/Jul/2026 11:57:27] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-08 23:36:08,321 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-08 23:36:08,321 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-08 23:36:08,321 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-08 23:36:08,341 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-08 23:36:08,341 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-08 23:36:08,354 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-08 23:36:09,082 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-08 23:36:09,082 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2026-07-08 23:36:09,206 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-08 23:36:12,212 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-08 23:36:12,212 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-08 23:36:12,212 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-08 23:36:12,212 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-08 23:36:12,212 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-08 23:36:12,214 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-08 23:36:12,324 WARNING werkzeug:  * Debugger is active!
+2026-07-08 23:36:12,331 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-08 23:36:39,701 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-08 23:36:39,701 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-08 23:36:39,701 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-08 23:36:39,701 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-08 23:36:39,701 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-08 23:36:39,701 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-08 23:36:39,858 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-08 23:36:39,858 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2026-07-08 23:36:39,871 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-08 23:36:43,901 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-08 23:36:43,901 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-08 23:36:43,901 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-08 23:36:43,901 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-08 23:36:43,901 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-08 23:36:43,901 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-08 23:36:44,070 WARNING werkzeug:  * Debugger is active!
+2026-07-08 23:36:44,083 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-08 23:36:51,293 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\run.py', reloading
+2026-07-08 23:36:51,679 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-08 23:58:07,746 INFO core.dataloader: Customer dataset loaded successfully. Shape: (1500, 21)
+2026-07-08 23:58:07,787 INFO core.dataloader: Car dataset loaded successfully. Shape: (43, 16)
+2026-07-08 23:58:07,793 INFO core.dataloader: Dataset validation completed.
+2026-07-08 23:58:07,833 INFO core.dataloader: Datasets merged successfully. Shape: (5305, 37)
+2026-07-08 23:58:08,003 INFO root: Training Random Forest...
+2026-07-08 23:58:12,686 INFO root: Training Gradient Boosting...
+2026-07-08 23:58:21,697 INFO root: Training SVM...
+2026-07-08 23:58:25,056 INFO root: Best model saved as C:\Users\dell\Desktop\CarRecommendationSystem\models\best_model.pkl
+2026-07-09 00:13:31,293 INFO __main__: Starting training pipeline execution.
+2026-07-09 00:13:32,717 INFO core.dataloader: Customer dataset loaded successfully. Shape: (1500, 21)
+2026-07-09 00:13:32,747 INFO core.dataloader: Car dataset loaded successfully. Shape: (43, 16)
+2026-07-09 00:13:32,753 INFO core.dataloader: Dataset validation completed.
+2026-07-09 00:13:32,764 INFO core.dataloader: Datasets merged successfully. Shape: (5305, 37)
+2026-07-09 00:13:53,477 INFO __main__: Starting training pipeline execution.
+2026-07-09 00:13:54,863 INFO core.dataloader: Customer dataset loaded successfully. Shape: (1500, 21)
+2026-07-09 00:13:54,893 INFO core.dataloader: Car dataset loaded successfully. Shape: (43, 16)
+2026-07-09 00:13:54,896 INFO core.dataloader: Dataset validation completed.
+2026-07-09 00:13:54,909 INFO core.dataloader: Datasets merged successfully. Shape: (5305, 37)
+2026-07-09 00:13:55,084 INFO root: Training Random Forest...
+2026-07-09 00:13:56,883 INFO root: Training Gradient Boosting...
+2026-07-09 00:14:01,125 INFO root: Training SVM...
+2026-07-09 00:14:03,426 INFO root: Best model saved as C:\Users\dell\Desktop\CarRecommendationSystem\models\best_model.pkl
+2026-07-09 00:14:03,433 INFO __main__: Saved fitted preprocessor object to: C:\Users\dell\Desktop\CarRecommendationSystem\models\preprocessor.pkl
+2026-07-09 00:14:13,512 INFO core.report_generator: Excel Report Saved: C:\Users\dell\Desktop\CarRecommendationSystem\reports\training_data_report.xlsx
+2026-07-09 00:14:15,976 INFO core.report_generator: PDF Report Saved: C:\Users\dell\Desktop\CarRecommendationSystem\reports\customer_analysis_report.pdf
+2026-07-09 00:14:21,583 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:15:30,736 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:15:30,736 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-09 00:15:30,736 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-09 00:15:30,736 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:15:30,738 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-09 00:15:30,738 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-09 00:15:31,089 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-09 00:15:31,089 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2026-07-09 00:15:31,129 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-09 00:15:40,510 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:15:40,511 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-09 00:15:40,511 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-09 00:15:40,512 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:15:40,512 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-09 00:15:40,513 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-09 00:15:40,874 WARNING werkzeug:  * Debugger is active!
+2026-07-09 00:15:40,888 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-09 00:17:09,402 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:17:09,402 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-09 00:17:09,404 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-09 00:17:09,404 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:17:09,404 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-09 00:17:09,404 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-09 00:17:09,760 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\encodings\\unicode_escape.py', reloading
+2026-07-09 00:17:10,584 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-09 00:17:14,331 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:17:19,391 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:17:19,391 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-09 00:17:19,391 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-09 00:17:19,393 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:17:19,393 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-09 00:17:19,394 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-09 00:17:19,662 WARNING werkzeug:  * Debugger is active!
+2026-07-09 00:17:19,677 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-09 00:17:35,445 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:17:35,445 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-09 00:17:35,445 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-09 00:17:35,447 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:17:35,447 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-09 00:17:35,448 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-09 00:17:38,326 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:17:41,520 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:26:00,529 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:26:00] "GET / HTTP/1.1" 200 -
+2026-07-09 00:26:00,659 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:26:00] "GET /static/cssstyle.css HTTP/1.1" 200 -
+2026-07-09 00:26:01,578 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:26:01] "GET / HTTP/1.1" 200 -
+2026-07-09 00:26:01,706 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:26:01] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:26:01,779 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:26:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-07-09 00:26:41,870 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:26:41,899 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:26:41] "POST /predict HTTP/1.1" 200 -
+2026-07-09 00:26:41,959 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:26:41] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:27:05,448 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:27:05] "GET / HTTP/1.1" 200 -
+2026-07-09 00:27:05,508 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:27:05] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:27:20,353 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:27:20,353 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:27:20] "POST /predict HTTP/1.1" 200 -
+2026-07-09 00:27:20,408 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:27:20] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:27:46,057 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:27:46,060 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:27:46] "POST /predict HTTP/1.1" 200 -
+2026-07-09 00:27:46,119 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:27:46] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:27:54,477 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:27:54,497 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:27:54] "GET /dashboard HTTP/1.1" 200 -
+2026-07-09 00:27:54,553 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:27:54] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:27:54,577 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:27:54] "GET /static/images/brand_preference.png HTTP/1.1" 200 -
+2026-07-09 00:27:54,582 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:27:54] "GET /static/images/segment_distribution.png HTTP/1.1" 200 -
+2026-07-09 00:27:54,584 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:27:54] "GET /static/images/fuel_preference.png HTTP/1.1" 200 -
+2026-07-09 00:27:54,595 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:27:54] "GET /static/images/budget_distribution.png HTTP/1.1" 200 -
+2026-07-09 00:27:54,605 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:27:54] "GET /static/images/correlation_heatmap.png HTTP/1.1" 200 -
+2026-07-09 00:28:31,154 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:28:31] "GET /history HTTP/1.1" 200 -
+2026-07-09 00:28:31,218 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:28:31] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:31:05,272 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\core\\recommendation_engine.py', reloading
+2026-07-09 00:31:05,843 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-09 00:31:14,226 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:31:14,227 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-09 00:31:14,227 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-09 00:31:14,229 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:31:14,229 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-09 00:31:14,229 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-09 00:31:14,531 WARNING werkzeug:  * Debugger is active!
+2026-07-09 00:31:14,539 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-09 00:31:14,903 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\app.py', reloading
+2026-07-09 00:31:15,509 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-09 00:31:22,843 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:31:22,843 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-09 00:31:22,850 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-09 00:31:22,850 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:31:22,850 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-09 00:31:22,851 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-09 00:31:42,640 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:31:42,640 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-09 00:31:42,640 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-09 00:31:42,640 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:31:42,640 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-09 00:31:42,645 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-09 00:31:42,958 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-09 00:31:42,958 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2026-07-09 00:31:42,975 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-09 00:31:50,141 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:31:50,141 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-09 00:31:50,141 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-09 00:31:50,142 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:31:50,143 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-09 00:31:50,144 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-09 00:31:50,464 WARNING werkzeug:  * Debugger is active!
+2026-07-09 00:31:50,472 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-09 00:32:02,092 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:32:02,092 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-09 00:32:02,093 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-09 00:32:02,093 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:32:02,093 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-09 00:32:02,095 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-09 00:32:04,838 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:32:07,999 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:32:41,802 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:32:41] "GET / HTTP/1.1" 200 -
+2026-07-09 00:32:41,871 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:32:41] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:33:22,820 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:33:22,833 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:33:22] "POST /predict HTTP/1.1" 200 -
+2026-07-09 00:33:22,898 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:33:22] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:34:27,462 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:34:27,470 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:34:27] "POST /predict HTTP/1.1" 200 -
+2026-07-09 00:34:27,532 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:34:27] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:34:54,908 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:34:54,937 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:34:54] "GET /dashboard HTTP/1.1" 200 -
+2026-07-09 00:34:54,999 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:34:54] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:34:55,039 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:34:55] "GET /static/images/segment_distribution.png HTTP/1.1" 200 -
+2026-07-09 00:34:55,043 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:34:55] "GET /static/images/fuel_preference.png HTTP/1.1" 200 -
+2026-07-09 00:34:55,047 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:34:55] "GET /static/images/budget_distribution.png HTTP/1.1" 200 -
+2026-07-09 00:34:55,050 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:34:55] "GET /static/images/correlation_heatmap.png HTTP/1.1" 200 -
+2026-07-09 00:34:55,050 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:34:55] "GET /static/images/brand_preference.png HTTP/1.1" 200 -
+2026-07-09 00:34:57,815 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:34:57] "GET /history HTTP/1.1" 200 -
+2026-07-09 00:34:57,878 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:34:57] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:35:12,170 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\flask\\app.py', reloading
+2026-07-09 00:35:12,804 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-09 00:35:19,534 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:35:19,534 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-09 00:35:19,535 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-09 00:35:19,535 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:35:19,535 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-09 00:35:19,535 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-09 00:35:19,825 WARNING werkzeug:  * Debugger is active!
+2026-07-09 00:35:19,835 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-09 00:35:20,937 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\core\\database_manager.py', reloading
+2026-07-09 00:35:21,494 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-09 00:35:27,956 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:35:27,958 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-09 00:35:27,958 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-09 00:35:27,958 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:35:27,960 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-09 00:35:27,960 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-09 00:35:28,164 WARNING werkzeug:  * Debugger is active!
+2026-07-09 00:35:28,175 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-09 00:35:29,759 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:35:29] "GET /dashboard HTTP/1.1" 200 -
+2026-07-09 00:35:29,839 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:35:29] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:35:35,545 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:35:35] "GET / HTTP/1.1" 200 -
+2026-07-09 00:35:35,624 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:35:35] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:36:02,990 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\seaborn\\matrix.py', reloading
+2026-07-09 00:36:03,683 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-09 00:36:10,402 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:36:10,405 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-09 00:36:10,405 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-09 00:36:10,405 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:36:10,405 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-09 00:36:10,405 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-09 00:36:10,649 WARNING werkzeug:  * Debugger is active!
+2026-07-09 00:36:10,662 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-09 00:36:13,457 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:36:13,484 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:36:13] "POST /predict HTTP/1.1" 200 -
+2026-07-09 00:36:13,550 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:36:13] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:36:34,540 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:36:34] "GET /history HTTP/1.1" 200 -
+2026-07-09 00:36:34,609 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:36:34] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:36:54,428 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:36:54,453 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:36:54] "GET /dashboard HTTP/1.1" 200 -
+2026-07-09 00:36:54,511 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:36:54] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:36:54,584 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:36:54] "GET /static/images/brand_preference.png HTTP/1.1" 200 -
+2026-07-09 00:36:54,596 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:36:54] "GET /static/images/fuel_preference.png HTTP/1.1" 200 -
+2026-07-09 00:36:54,622 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:36:54] "GET /static/images/segment_distribution.png HTTP/1.1" 200 -
+2026-07-09 00:36:54,633 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:36:54] "GET /static/images/budget_distribution.png HTTP/1.1" 200 -
+2026-07-09 00:36:54,644 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:36:54] "GET /static/images/correlation_heatmap.png HTTP/1.1" 200 -
+2026-07-09 00:37:07,609 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:37:07] "GET / HTTP/1.1" 200 -
+2026-07-09 00:37:07,708 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:37:07] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:37:32,871 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:37:32,874 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:37:32] "POST /predict HTTP/1.1" 200 -
+2026-07-09 00:37:32,952 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:37:32] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:37:40,766 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:37:40] "GET /history HTTP/1.1" 200 -
+2026-07-09 00:37:40,827 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:37:40] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:37:49,478 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:37:49,483 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:37:49] "GET /dashboard HTTP/1.1" 200 -
+2026-07-09 00:37:49,563 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:37:49] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:37:49,606 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:37:49] "GET /static/images/segment_distribution.png HTTP/1.1" 200 -
+2026-07-09 00:37:49,609 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:37:49] "GET /static/images/fuel_preference.png HTTP/1.1" 200 -
+2026-07-09 00:37:49,618 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:37:49] "GET /static/images/budget_distribution.png HTTP/1.1" 200 -
+2026-07-09 00:37:49,621 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:37:49] "GET /static/images/brand_preference.png HTTP/1.1" 200 -
+2026-07-09 00:37:49,631 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:37:49] "GET /static/images/correlation_heatmap.png HTTP/1.1" 200 -
+2026-07-09 00:37:57,418 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:37:57] "GET /history HTTP/1.1" 200 -
+2026-07-09 00:37:57,479 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:37:57] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:38:07,401 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:38:07] "GET / HTTP/1.1" 200 -
+2026-07-09 00:38:07,479 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:38:07] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:38:29,801 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:38:29,807 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:38:29] "POST /predict HTTP/1.1" 200 -
+2026-07-09 00:38:29,873 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:38:29] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:38:46,556 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:38:46,559 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:38:46] "GET /dashboard HTTP/1.1" 200 -
+2026-07-09 00:38:46,616 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:38:46] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:38:46,641 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:38:46] "GET /static/images/segment_distribution.png HTTP/1.1" 200 -
+2026-07-09 00:38:46,645 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:38:46] "GET /static/images/brand_preference.png HTTP/1.1" 200 -
+2026-07-09 00:38:46,647 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:38:46] "GET /static/images/fuel_preference.png HTTP/1.1" 200 -
+2026-07-09 00:38:46,652 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:38:46] "GET /static/images/correlation_heatmap.png HTTP/1.1" 200 -
+2026-07-09 00:38:46,656 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:38:46] "GET /static/images/budget_distribution.png HTTP/1.1" 200 -
+2026-07-09 00:39:01,601 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:39:01] "GET /history HTTP/1.1" 200 -
+2026-07-09 00:39:01,678 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:39:01] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:45:49,549 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:45:49] "GET /history HTTP/1.1" 200 -
+2026-07-09 00:45:49,602 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:45:49] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:45:51,516 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:45:51] "GET /history HTTP/1.1" 200 -
+2026-07-09 00:45:51,564 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:45:51] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:45:56,319 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\flask\\sessions.py', reloading
+2026-07-09 00:45:56,902 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-09 00:46:03,887 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:46:03,888 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-09 00:46:03,888 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-09 00:46:03,888 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:46:03,888 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-09 00:46:03,890 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-09 00:46:04,225 WARNING werkzeug:  * Debugger is active!
+2026-07-09 00:46:04,242 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-09 00:46:04,658 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\itsdangerous\\serializer.py', reloading
+2026-07-09 00:46:05,165 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-09 00:46:11,671 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:46:11,672 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-09 00:46:11,672 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-09 00:46:11,672 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:46:11,672 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-09 00:46:11,672 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-09 00:46:11,895 WARNING werkzeug:  * Debugger is active!
+2026-07-09 00:46:11,903 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-09 00:46:15,258 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:46:15] "GET / HTTP/1.1" 200 -
+2026-07-09 00:46:15,325 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:46:15] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:47:02,923 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:47:02,947 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:47:02] "POST /predict HTTP/1.1" 200 -
+2026-07-09 00:47:03,007 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:47:03] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:47:15,444 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:47:15] "GET /history HTTP/1.1" 200 -
+2026-07-09 00:47:15,515 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:47:15] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:47:21,265 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:47:21] "GET / HTTP/1.1" 200 -
+2026-07-09 00:47:21,328 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:47:21] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:47:41,084 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:47:41,091 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:47:41] "POST /predict HTTP/1.1" 200 -
+2026-07-09 00:47:41,151 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:47:41] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:47:58,307 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:47:58] "GET /history HTTP/1.1" 200 -
+2026-07-09 00:47:58,365 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:47:58] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:48:03,340 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:48:03] "GET / HTTP/1.1" 200 -
+2026-07-09 00:48:03,402 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:48:03] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:48:36,566 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:48:36,568 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:48:36] "POST /predict HTTP/1.1" 200 -
+2026-07-09 00:48:36,628 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:48:36] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:48:54,855 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:48:54] "GET /history HTTP/1.1" 200 -
+2026-07-09 00:48:54,919 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:48:54] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:49:07,321 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:49:07,339 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:49:07] "GET /dashboard HTTP/1.1" 200 -
+2026-07-09 00:49:07,406 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:49:07] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:49:07,437 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:49:07] "GET /static/images/segment_distribution.png HTTP/1.1" 200 -
+2026-07-09 00:49:07,454 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:49:07] "GET /static/images/brand_preference.png HTTP/1.1" 200 -
+2026-07-09 00:49:07,457 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:49:07] "GET /static/images/fuel_preference.png HTTP/1.1" 200 -
+2026-07-09 00:49:07,458 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:49:07] "GET /static/images/budget_distribution.png HTTP/1.1" 200 -
+2026-07-09 00:49:07,460 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:49:07] "GET /static/images/correlation_heatmap.png HTTP/1.1" 200 -
+2026-07-09 00:49:25,767 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:49:25] "GET /history HTTP/1.1" 200 -
+2026-07-09 00:49:25,830 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:49:25] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:49:31,991 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:49:31] "GET / HTTP/1.1" 200 -
+2026-07-09 00:49:32,056 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:49:32] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:49:41,762 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:49:41,762 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:49:41] "POST /predict HTTP/1.1" 200 -
+2026-07-09 00:49:41,830 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:49:41] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:49:56,590 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:49:56] "GET /history HTTP/1.1" 200 -
+2026-07-09 00:49:56,638 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:49:56] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:50:22,390 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:50:22] "GET /history HTTP/1.1" 200 -
+2026-07-09 00:50:22,457 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:50:22] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:51:14,247 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:51:14,250 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:51:14] "POST /predict HTTP/1.1" 200 -
+2026-07-09 00:51:14,312 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:51:14] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:51:40,244 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:51:40] "GET /history HTTP/1.1" 200 -
+2026-07-09 00:51:40,303 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:51:40] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:51:55,053 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:51:55] "GET /history HTTP/1.1" 200 -
+2026-07-09 00:51:55,105 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:51:55] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:52:22,515 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:52:22] "GET /history HTTP/1.1" 200 -
+2026-07-09 00:52:22,573 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 00:52:22] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 00:56:42,386 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:56:42,386 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-09 00:56:42,386 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-09 00:56:42,386 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 00:56:42,388 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-09 00:56:42,389 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-09 00:56:44,778 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 00:56:47,513 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 01:15:07,924 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 01:15:07] "GET / HTTP/1.1" 200 -
+2026-07-09 01:15:07,975 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 01:15:07] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 01:15:18,387 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 01:15:18,423 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 01:15:18] "POST /predict HTTP/1.1" 200 -
+2026-07-09 01:15:18,487 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 01:15:18] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 01:15:27,393 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 01:15:27] "GET /history HTTP/1.1" 200 -
+2026-07-09 01:15:27,452 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 01:15:27] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 01:18:01,287 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\app.py', reloading
+2026-07-09 01:18:01,288 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\app.py', reloading
+2026-07-09 01:18:01,290 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\app.py', reloading
+2026-07-09 01:18:02,210 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-09 01:18:08,819 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 01:18:08,820 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-09 01:18:08,820 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-09 01:18:08,820 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 01:18:08,820 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-09 01:18:08,821 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-09 01:18:09,059 WARNING werkzeug:  * Debugger is active!
+2026-07-09 01:18:09,067 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-09 01:18:19,932 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 01:18:19,932 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-09 01:18:19,932 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-09 01:18:19,932 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 01:18:19,934 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-09 01:18:19,934 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-09 01:18:20,179 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\encodings\\unicode_escape.py', reloading
+2026-07-09 01:18:21,019 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-09 01:18:23,051 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 01:18:27,336 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 01:18:29,841 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 01:18:29,841 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-09 01:18:29,841 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-09 01:18:29,841 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 01:18:29,841 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-09 01:18:29,849 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-09 01:18:30,101 WARNING werkzeug:  * Debugger is active!
+2026-07-09 01:18:30,109 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-09 01:20:10,984 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 01:20:11,001 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 01:20:11] "POST /predict HTTP/1.1" 200 -
+2026-07-09 01:20:11,045 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 01:20:11] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 01:20:23,136 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 01:20:23,140 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 01:20:23] "POST /predict HTTP/1.1" 200 -
+2026-07-09 01:20:23,217 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 01:20:23] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 01:21:08,847 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 01:21:08,847 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-09 01:21:08,847 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-09 01:21:08,847 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-09 01:21:08,849 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-09 01:21:08,849 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-09 01:21:11,098 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 01:21:14,913 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 01:22:03,462 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 01:22:03,496 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 01:22:03] "POST /predict HTTP/1.1" 200 -
+2026-07-09 01:22:03,560 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 01:22:03] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 01:22:42,896 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 01:22:42,902 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 01:22:42] "POST /predict HTTP/1.1" 200 -
+2026-07-09 01:22:42,963 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 01:22:42] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 01:23:10,887 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 01:23:10] "GET /history HTTP/1.1" 200 -
+2026-07-09 01:23:10,945 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 01:23:10] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 01:25:18,451 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-09 01:25:18,476 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 01:25:18] "GET /dashboard HTTP/1.1" 200 -
+2026-07-09 01:25:18,538 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 01:25:18] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-09 01:25:18,579 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 01:25:18] "GET /static/images/segment_distribution.png HTTP/1.1" 200 -
+2026-07-09 01:25:18,581 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 01:25:18] "GET /static/images/brand_preference.png HTTP/1.1" 200 -
+2026-07-09 01:25:18,605 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 01:25:18] "GET /static/images/fuel_preference.png HTTP/1.1" 200 -
+2026-07-09 01:25:18,625 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 01:25:18] "GET /static/images/correlation_heatmap.png HTTP/1.1" 200 -
+2026-07-09 01:25:18,627 INFO werkzeug: 127.0.0.1 - - [09/Jul/2026 01:25:18] "GET /static/images/budget_distribution.png HTTP/1.1" 200 -
+2026-07-10 11:48:38,554 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 11:48:38,556 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 11:48:38,556 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 11:48:38,564 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 11:48:38,564 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 11:48:38,599 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 11:48:39,187 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-10 11:48:39,187 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2026-07-10 11:48:39,408 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 11:48:44,558 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 11:48:44,558 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 11:48:44,558 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 11:48:44,558 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 11:48:44,558 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 11:48:44,558 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 11:48:44,862 WARNING werkzeug:  * Debugger is active!
+2026-07-10 11:48:44,875 INFO werkzeug:  * Debugger PIN: 119-433-031
+2026-07-10 11:49:09,967 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 11:49:09,967 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 11:49:09,967 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 11:49:09,967 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 11:49:09,967 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 11:49:09,969 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 11:49:10,144 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-10 11:49:10,144 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2026-07-10 11:49:10,155 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 11:49:14,511 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 11:49:14,512 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 11:49:14,512 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 11:49:14,512 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 11:49:14,512 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 11:49:14,512 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 11:49:14,718 WARNING werkzeug:  * Debugger is active!
+2026-07-10 11:49:14,726 INFO werkzeug:  * Debugger PIN: 119-433-031
+2026-07-10 11:49:44,833 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\encodings\\unicode_escape.py', reloading
+2026-07-10 11:49:44,858 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\encodings\\unicode_escape.py', reloading
+2026-07-10 11:49:44,860 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:49:44] "GET / HTTP/1.1" 200 -
+2026-07-10 11:49:45,900 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 11:49:45,905 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 11:49:51,737 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 11:49:51,738 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 11:49:51,738 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 11:49:51,738 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 11:49:51,738 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 11:49:51,739 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 11:49:51,754 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 11:49:51,754 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 11:49:51,754 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 11:49:51,755 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 11:49:51,755 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 11:49:51,756 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 11:49:51,900 WARNING werkzeug:  * Debugger is active!
+2026-07-10 11:49:51,904 WARNING werkzeug:  * Debugger is active!
+2026-07-10 11:49:51,910 INFO werkzeug:  * Debugger PIN: 119-433-031
+2026-07-10 11:49:51,913 INFO werkzeug:  * Debugger PIN: 119-433-031
+2026-07-10 11:49:52,235 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:49:52] "GET /static/images/cars/tata_punch.jpg HTTP/1.1" 200 -
+2026-07-10 11:49:52,238 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:49:52] "GET /static/images/cars/tata_altroz.jpg HTTP/1.1" 200 -
+2026-07-10 11:49:52,243 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:49:52] "GET /static/cssstyle.css HTTP/1.1" 200 -
+2026-07-10 11:49:52,246 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:49:52] "GET /static/images/cars/toyota_urban_cruiser_hyryder.jpg HTTP/1.1" 200 -
+2026-07-10 11:49:52,247 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:49:52] "GET /static/images/cars/tata_nexon.jpg HTTP/1.1" 200 -
+2026-07-10 11:49:52,255 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:49:52] "GET /static/images/cars/maruti_suzuki_grand_vitara.jpg HTTP/1.1" 200 -
+2026-07-10 11:49:53,137 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:49:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-07-10 11:50:06,360 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\sqlite3\\__init__.py', reloading
+2026-07-10 11:50:06,360 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\sqlite3\\__init__.py', reloading
+2026-07-10 11:50:06,810 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 11:50:06,820 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 11:50:11,728 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 11:50:11,728 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 11:50:11,728 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 11:50:11,729 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 11:50:11,729 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 11:50:11,729 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 11:50:11,743 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 11:50:11,743 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 11:50:11,743 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 11:50:11,743 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 11:50:11,743 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 11:50:11,745 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 11:50:12,043 WARNING werkzeug:  * Debugger is active!
+2026-07-10 11:50:12,047 WARNING werkzeug:  * Debugger is active!
+2026-07-10 11:50:12,051 INFO werkzeug:  * Debugger PIN: 119-433-031
+2026-07-10 11:50:12,054 INFO werkzeug:  * Debugger PIN: 119-433-031
+2026-07-10 11:50:14,900 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\sqlite3\\dbapi2.py', reloading
+2026-07-10 11:50:14,900 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\sqlite3\\dbapi2.py', reloading
+2026-07-10 11:50:15,565 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 11:50:15,743 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 11:50:21,053 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 11:50:21,053 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 11:50:21,053 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 11:50:21,053 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 11:50:21,053 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 11:50:21,055 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 11:50:21,205 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 11:50:21,205 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 11:50:21,205 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 11:50:21,205 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 11:50:21,205 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 11:50:21,205 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 11:50:21,254 WARNING werkzeug:  * Debugger is active!
+2026-07-10 11:50:21,266 INFO werkzeug:  * Debugger PIN: 119-433-031
+2026-07-10 11:50:21,346 WARNING werkzeug:  * Debugger is active!
+2026-07-10 11:50:21,353 INFO werkzeug:  * Debugger PIN: 119-433-031
+2026-07-10 11:50:36,407 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:50:36] "GET / HTTP/1.1" 200 -
+2026-07-10 11:50:36,551 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:50:36] "GET /static/images/cars/tata_punch.jpg HTTP/1.1" 200 -
+2026-07-10 11:50:36,552 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:50:36] "GET /static/images/cars/tata_altroz.jpg HTTP/1.1" 200 -
+2026-07-10 11:50:36,571 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:50:36] "GET /static/images/cars/maruti_suzuki_grand_vitara.jpg HTTP/1.1" 200 -
+2026-07-10 11:50:36,575 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:50:36] "GET /static/images/cars/toyota_urban_cruiser_hyryder.jpg HTTP/1.1" 200 -
+2026-07-10 11:50:36,608 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:50:36] "GET /static/images/cars/tata_nexon.jpg HTTP/1.1" 200 -
+2026-07-10 11:50:36,610 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:50:36] "GET /static/cssstyle.css HTTP/1.1" 200 -
+2026-07-10 11:50:37,094 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:50:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-07-10 11:50:43,504 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\core\\database_manager.py', reloading
+2026-07-10 11:50:43,506 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\core\\database_manager.py', reloading
+2026-07-10 11:50:44,175 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 11:50:50,298 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 11:50:50,298 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 11:50:50,298 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 11:50:50,300 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 11:50:50,300 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 11:50:50,302 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 11:50:50,655 WARNING werkzeug:  * Debugger is active!
+2026-07-10 11:50:50,667 INFO werkzeug:  * Debugger PIN: 119-433-031
+2026-07-10 11:50:51,923 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\core\\report_generator.py', reloading
+2026-07-10 11:50:52,529 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 11:50:57,116 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 11:50:57,116 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 11:50:57,116 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 11:50:57,120 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 11:50:57,120 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 11:50:57,121 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 11:50:57,261 WARNING werkzeug:  * Debugger is active!
+2026-07-10 11:50:57,266 INFO werkzeug:  * Debugger PIN: 119-433-031
+2026-07-10 11:51:09,360 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-10 11:51:09,378 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:51:09] "POST /predict HTTP/1.1" 200 -
+2026-07-10 11:51:09,433 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:51:09] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-10 11:51:09,455 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:51:09] "GET /static/images/cars/mg_hector.jpg HTTP/1.1" 200 -
+2026-07-10 11:51:09,460 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:51:09] "GET /static/images/cars/honda_elevate.jpg HTTP/1.1" 200 -
+2026-07-10 11:51:09,520 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:51:09] "[36mGET /static/images/cars/tata_nexon.jpg HTTP/1.1[0m" 304 -
+2026-07-10 11:51:09,527 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:51:09] "GET /static/images/cars/hyundai_creta.jpg HTTP/1.1" 200 -
+2026-07-10 11:51:09,535 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:51:09] "GET /static/images/cars/mg_astor.jpg HTTP/1.1" 200 -
+2026-07-10 11:53:28,729 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-10 11:53:28,752 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:53:28] "POST /predict HTTP/1.1" 200 -
+2026-07-10 11:53:28,802 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:53:28] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-10 11:53:28,808 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:53:28] "[36mGET /static/images/cars/mg_hector.jpg HTTP/1.1[0m" 304 -
+2026-07-10 11:53:28,817 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:53:28] "[36mGET /static/images/cars/honda_elevate.jpg HTTP/1.1[0m" 304 -
+2026-07-10 11:53:28,817 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:53:28] "[36mGET /static/images/cars/tata_nexon.jpg HTTP/1.1[0m" 304 -
+2026-07-10 11:53:28,825 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:53:28] "[36mGET /static/images/cars/hyundai_creta.jpg HTTP/1.1[0m" 304 -
+2026-07-10 11:53:28,827 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 11:53:28] "[36mGET /static/images/cars/mg_astor.jpg HTTP/1.1[0m" 304 -
+2026-07-10 12:01:15,373 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-10 12:01:15,379 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:01:15] "POST /predict HTTP/1.1" 200 -
+2026-07-10 12:01:15,426 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:01:15] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-10 12:01:15,442 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:01:15] "[36mGET /static/images/cars/honda_elevate.jpg HTTP/1.1[0m" 304 -
+2026-07-10 12:01:15,459 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:01:15] "[36mGET /static/images/cars/hyundai_creta.jpg HTTP/1.1[0m" 304 -
+2026-07-10 12:01:15,462 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:01:15] "GET /static/images/cars/mg_hector.jpg HTTP/1.1" 200 -
+2026-07-10 12:01:15,475 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:01:15] "GET /static/images/cars/tata_nexon.jpg HTTP/1.1" 200 -
+2026-07-10 12:01:15,483 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:01:15] "GET /static/images/cars/mg_astor.jpg HTTP/1.1" 200 -
+2026-07-10 12:02:03,900 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-10 12:02:03,911 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:02:03] "POST /predict HTTP/1.1" 200 -
+2026-07-10 12:02:03,987 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:02:03] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-10 12:02:03,998 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:02:03] "[36mGET /static/images/cars/mg_hector.jpg HTTP/1.1[0m" 304 -
+2026-07-10 12:02:03,998 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:02:03] "[36mGET /static/images/cars/honda_elevate.jpg HTTP/1.1[0m" 304 -
+2026-07-10 12:02:04,003 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:02:04] "[36mGET /static/images/cars/tata_nexon.jpg HTTP/1.1[0m" 304 -
+2026-07-10 12:02:04,012 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:02:04] "[36mGET /static/images/cars/hyundai_creta.jpg HTTP/1.1[0m" 304 -
+2026-07-10 12:02:04,012 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:02:04] "[36mGET /static/images/cars/mg_astor.jpg HTTP/1.1[0m" 304 -
+2026-07-10 12:02:15,403 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-10 12:02:15,407 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:02:15] "POST /predict HTTP/1.1" 200 -
+2026-07-10 12:02:15,460 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:02:15] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-10 12:02:15,472 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:02:15] "[36mGET /static/images/cars/mg_hector.jpg HTTP/1.1[0m" 304 -
+2026-07-10 12:02:15,476 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:02:15] "[36mGET /static/images/cars/tata_nexon.jpg HTTP/1.1[0m" 304 -
+2026-07-10 12:02:15,480 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:02:15] "[36mGET /static/images/cars/honda_elevate.jpg HTTP/1.1[0m" 304 -
+2026-07-10 12:02:15,483 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:02:15] "[36mGET /static/images/cars/hyundai_creta.jpg HTTP/1.1[0m" 304 -
+2026-07-10 12:02:15,491 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:02:15] "[36mGET /static/images/cars/mg_astor.jpg HTTP/1.1[0m" 304 -
+2026-07-10 12:02:24,527 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-10 12:02:24,536 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:02:24] "POST /predict HTTP/1.1" 200 -
+2026-07-10 12:02:24,605 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:02:24] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-10 12:02:24,620 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:02:24] "[36mGET /static/images/cars/mg_hector.jpg HTTP/1.1[0m" 304 -
+2026-07-10 12:02:24,624 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:02:24] "[36mGET /static/images/cars/honda_elevate.jpg HTTP/1.1[0m" 304 -
+2026-07-10 12:02:24,632 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:02:24] "[36mGET /static/images/cars/tata_nexon.jpg HTTP/1.1[0m" 304 -
+2026-07-10 12:02:24,636 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:02:24] "[36mGET /static/images/cars/hyundai_creta.jpg HTTP/1.1[0m" 304 -
+2026-07-10 12:02:24,637 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:02:24] "[36mGET /static/images/cars/mg_astor.jpg HTTP/1.1[0m" 304 -
+2026-07-10 12:21:08,105 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-10 12:21:08,111 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:21:08] "POST /predict HTTP/1.1" 200 -
+2026-07-10 12:21:08,176 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:21:08] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-10 12:21:08,188 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:21:08] "[36mGET /static/images/cars/mg_hector.jpg HTTP/1.1[0m" 304 -
+2026-07-10 12:21:08,196 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:21:08] "[36mGET /static/images/cars/honda_elevate.jpg HTTP/1.1[0m" 304 -
+2026-07-10 12:21:08,256 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:21:08] "[36mGET /static/images/cars/hyundai_creta.jpg HTTP/1.1[0m" 304 -
+2026-07-10 12:21:08,290 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:21:08] "GET /static/images/cars/tata_nexon.jpg HTTP/1.1" 200 -
+2026-07-10 12:21:08,299 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 12:21:08] "GET /static/images/cars/mg_astor.jpg HTTP/1.1" 200 -
+2026-07-10 12:27:46,208 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\encodings\\__init__.py', reloading
+2026-07-10 12:27:47,078 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 12:27:54,780 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 12:27:54,780 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 12:27:54,780 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 12:27:54,780 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 12:27:54,782 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 12:27:54,783 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 12:27:55,010 WARNING werkzeug:  * Debugger is active!
+2026-07-10 12:27:55,018 INFO werkzeug:  * Debugger PIN: 119-433-031
+2026-07-10 18:11:46,461 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:11:46,461 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 18:11:46,461 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 18:11:46,479 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:11:46,481 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 18:11:46,501 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 18:11:47,430 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-10 18:11:47,430 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2026-07-10 18:11:47,641 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 18:11:53,625 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:11:53,625 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 18:11:53,625 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 18:11:53,625 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:11:53,625 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 18:11:53,625 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 18:11:53,897 WARNING werkzeug:  * Debugger is active!
+2026-07-10 18:11:53,913 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-10 18:12:17,589 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:12:17] "GET / HTTP/1.1" 200 -
+2026-07-10 18:12:17,591 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\encodings\\unicode_escape.py', reloading
+2026-07-10 18:12:18,241 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 18:12:25,071 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:12:25,071 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 18:12:25,071 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 18:12:25,071 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:12:25,071 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 18:12:25,071 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 18:12:25,390 WARNING werkzeug:  * Debugger is active!
+2026-07-10 18:12:25,401 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-10 18:12:25,737 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:12:25] "GET /static/images/cars/tata_altroz.jpg HTTP/1.1" 200 -
+2026-07-10 18:12:25,769 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:12:25] "GET /static/images/cars/tata_punch.jpg HTTP/1.1" 200 -
+2026-07-10 18:12:25,790 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:12:25] "GET /static/cssstyle.css HTTP/1.1" 200 -
+2026-07-10 18:12:26,097 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:12:26] "GET /static/images/cars/maruti_suzuki_grand_vitara.jpg HTTP/1.1" 200 -
+2026-07-10 18:12:26,124 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:12:26] "GET /static/images/cars/toyota_urban_cruiser_hyryder.jpg HTTP/1.1" 200 -
+2026-07-10 18:12:26,129 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:12:26] "GET /static/images/cars/tata_nexon.jpg HTTP/1.1" 200 -
+2026-07-10 18:12:26,673 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:12:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-07-10 18:12:34,311 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\config.py', reloading
+2026-07-10 18:12:34,879 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 18:12:40,667 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:12:40,667 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 18:12:40,667 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 18:12:40,670 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:12:40,670 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 18:12:40,671 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 18:12:41,016 WARNING werkzeug:  * Debugger is active!
+2026-07-10 18:12:41,025 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-10 18:12:52,040 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:12:52] "GET / HTTP/1.1" 200 -
+2026-07-10 18:12:52,076 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:12:52] "GET / HTTP/1.1" 200 -
+2026-07-10 18:12:52,204 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:12:52] "[36mGET /static/images/cars/tata_punch.jpg HTTP/1.1[0m" 304 -
+2026-07-10 18:12:52,217 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:12:52] "[36mGET /static/images/cars/tata_altroz.jpg HTTP/1.1[0m" 304 -
+2026-07-10 18:12:52,250 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:12:52] "[36mGET /static/images/cars/maruti_suzuki_grand_vitara.jpg HTTP/1.1[0m" 304 -
+2026-07-10 18:12:52,253 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:12:52] "GET /static/images/cars/toyota_urban_cruiser_hyryder.jpg HTTP/1.1" 200 -
+2026-07-10 18:12:52,264 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:12:52] "[36mGET /static/images/cars/tata_nexon.jpg HTTP/1.1[0m" 304 -
+2026-07-10 18:12:52,293 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:12:52] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-10 18:12:52,315 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:12:52] "[36mGET /static/images/cars/tata_punch.jpg HTTP/1.1[0m" 304 -
+2026-07-10 18:12:52,323 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:12:52] "[36mGET /static/images/cars/tata_altroz.jpg HTTP/1.1[0m" 304 -
+2026-07-10 18:12:52,331 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:12:52] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-10 18:12:52,354 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:12:52] "[36mGET /static/images/cars/maruti_suzuki_grand_vitara.jpg HTTP/1.1[0m" 304 -
+2026-07-10 18:12:52,374 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:12:52] "[36mGET /static/images/cars/toyota_urban_cruiser_hyryder.jpg HTTP/1.1[0m" 304 -
+2026-07-10 18:12:52,387 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:12:52] "[36mGET /static/images/cars/tata_nexon.jpg HTTP/1.1[0m" 304 -
+2026-07-10 18:12:52,619 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:12:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-07-10 18:13:42,828 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\sqlite3\\__init__.py', reloading
+2026-07-10 18:13:43,377 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 18:13:48,006 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:13:48,006 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 18:13:48,006 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 18:13:48,008 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:13:48,008 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 18:13:48,010 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 18:13:48,320 WARNING werkzeug:  * Debugger is active!
+2026-07-10 18:13:48,336 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-10 18:14:03,351 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\sqlite3\\dbapi2.py', reloading
+2026-07-10 18:14:03,902 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 18:14:08,273 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:14:08,276 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 18:14:08,276 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 18:14:08,278 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:14:08,278 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 18:14:08,280 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 18:14:08,551 WARNING werkzeug:  * Debugger is active!
+2026-07-10 18:14:08,560 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-10 18:14:14,409 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\core\\database_manager.py', reloading
+2026-07-10 18:14:14,984 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 18:14:18,662 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:14:18,662 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 18:14:18,662 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 18:14:18,662 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:14:18,662 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 18:14:18,662 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 18:14:18,884 WARNING werkzeug:  * Debugger is active!
+2026-07-10 18:14:18,885 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-10 18:14:32,074 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:14:32,074 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 18:14:32,074 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 18:14:32,074 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:14:32,074 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 18:14:32,074 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 18:14:32,321 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-10 18:14:32,321 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2026-07-10 18:14:32,335 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 18:14:37,375 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:14:37,375 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 18:14:37,375 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 18:14:37,375 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:14:37,375 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 18:14:37,375 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 18:14:37,713 WARNING werkzeug:  * Debugger is active!
+2026-07-10 18:14:37,726 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-10 18:14:38,915 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\core\\report_generator.py', reloading
+2026-07-10 18:14:39,571 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 18:14:43,274 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:14:43,274 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 18:14:43,274 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 18:14:43,274 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:14:43,274 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 18:14:43,289 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 18:14:43,465 WARNING werkzeug:  * Debugger is active!
+2026-07-10 18:14:43,465 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-10 18:15:14,070 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-10 18:15:14,150 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:15:14] "POST /predict HTTP/1.1" 200 -
+2026-07-10 18:15:14,193 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:15:14] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-10 18:15:14,201 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:15:14] "[33mGET /static/images/cars/mg_hector.jpg HTTP/1.1[0m" 404 -
+2026-07-10 18:15:14,521 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:15:14] "GET /static/images/cars/honda_elevate.jpg HTTP/1.1" 200 -
+2026-07-10 18:15:14,529 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:15:14] "[36mGET /static/images/cars/tata_nexon.jpg HTTP/1.1[0m" 304 -
+2026-07-10 18:15:14,543 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:15:14] "GET /static/images/cars/hyundai_creta.jpg HTTP/1.1" 200 -
+2026-07-10 18:15:14,587 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:15:14] "GET /static/images/cars/mg_astor.jpg HTTP/1.1" 200 -
+2026-07-10 18:15:14,596 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:15:14] "GET /static/images/cars/fallback_suv.jpg HTTP/1.1" 200 -
+2026-07-10 18:16:48,345 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-10 18:16:48,354 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:16:48] "POST /predict HTTP/1.1" 200 -
+2026-07-10 18:16:48,439 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:16:48] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-10 18:16:48,451 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:16:48] "GET /static/images/cars/maruti_suzuki_dzire.jpg HTTP/1.1" 200 -
+2026-07-10 18:16:48,459 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:16:48] "GET /static/images/cars/honda_amaze.jpg HTTP/1.1" 200 -
+2026-07-10 18:16:48,511 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:16:48] "[36mGET /static/images/cars/tata_punch.jpg HTTP/1.1[0m" 304 -
+2026-07-10 18:16:48,521 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:16:48] "[36mGET /static/images/cars/tata_altroz.jpg HTTP/1.1[0m" 304 -
+2026-07-10 18:16:48,530 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:16:48] "GET /static/images/cars/maruti_suzuki_brezza.jpg HTTP/1.1" 200 -
+2026-07-10 18:16:54,762 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\core\\recommendation_engine.py', reloading
+2026-07-10 18:16:55,463 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 18:17:00,320 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:17:00,324 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 18:17:00,324 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 18:17:00,324 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:17:00,324 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 18:17:00,327 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 18:17:00,734 WARNING werkzeug:  * Debugger is active!
+2026-07-10 18:17:00,743 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-10 18:17:19,007 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\core\\recommendation_engine.py', reloading
+2026-07-10 18:17:19,008 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\core\\recommendation_engine.py', reloading
+2026-07-10 18:17:19,910 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 18:17:25,498 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:17:25,499 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 18:17:25,499 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 18:17:25,499 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:17:25,499 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 18:17:25,499 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 18:17:25,826 WARNING werkzeug:  * Debugger is active!
+2026-07-10 18:17:25,842 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-10 18:17:33,888 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:17:33,888 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 18:17:33,888 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 18:17:33,888 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:17:33,888 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 18:17:33,888 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 18:17:35,446 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-10 18:17:37,575 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-10 18:19:03,003 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-10 18:19:03,044 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:19:03] "POST /predict HTTP/1.1" 200 -
+2026-07-10 18:19:03,095 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:19:03] "GET /static/images/cars/maruti_suzuki_dzire.jpg HTTP/1.1" 200 -
+2026-07-10 18:19:03,095 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:19:03] "GET /static/images/cars/honda_amaze.jpg HTTP/1.1" 200 -
+2026-07-10 18:19:03,405 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:19:03] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-10 18:19:03,442 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:19:03] "GET /static/images/cars/maruti_suzuki_brezza.jpg HTTP/1.1" 200 -
+2026-07-10 18:19:03,447 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:19:03] "[36mGET /static/images/cars/tata_punch.jpg HTTP/1.1[0m" 304 -
+2026-07-10 18:19:03,451 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:19:03] "[36mGET /static/images/cars/tata_altroz.jpg HTTP/1.1[0m" 304 -
+2026-07-10 18:20:06,165 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-10 18:20:06,169 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:20:06] "POST /predict HTTP/1.1" 200 -
+2026-07-10 18:20:06,210 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:20:06] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-10 18:20:06,271 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:20:06] "GET /static/images/cars/mg_comet_ev.jpg HTTP/1.1" 200 -
+2026-07-10 18:20:06,538 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:20:06] "[36mGET /static/images/cars/maruti_suzuki_dzire.jpg HTTP/1.1[0m" 304 -
+2026-07-10 18:20:06,541 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:20:06] "[36mGET /static/images/cars/honda_amaze.jpg HTTP/1.1[0m" 304 -
+2026-07-10 18:20:06,543 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:20:06] "[36mGET /static/images/cars/maruti_suzuki_brezza.jpg HTTP/1.1[0m" 304 -
+2026-07-10 18:20:06,596 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:20:06] "GET /static/images/cars/toyota_innova_hycross.jpg HTTP/1.1" 200 -
+2026-07-10 18:20:58,826 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:20:58] "GET /history HTTP/1.1" 200 -
+2026-07-10 18:20:58,889 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:20:58] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-10 18:22:12,795 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\core\\preprocessing.py', reloading
+2026-07-10 18:22:13,552 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 18:22:18,772 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:22:18,772 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 18:22:18,772 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 18:22:18,772 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:22:18,772 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 18:22:18,776 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 18:22:19,064 WARNING werkzeug:  * Debugger is active!
+2026-07-10 18:22:19,072 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-10 18:23:02,270 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-10 18:23:02,312 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:23:02] "POST /predict HTTP/1.1" 200 -
+2026-07-10 18:23:02,371 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:23:02] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-10 18:23:02,381 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:23:02] "GET /static/images/cars/mg_comet_ev.jpg HTTP/1.1" 200 -
+2026-07-10 18:23:02,398 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:23:02] "GET /static/images/cars/maruti_suzuki_xl6.jpg HTTP/1.1" 200 -
+2026-07-10 18:23:02,431 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:23:02] "GET /static/images/cars/tata_harrier.jpg HTTP/1.1" 200 -
+2026-07-10 18:23:02,445 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:23:02] "[36mGET /static/images/cars/toyota_urban_cruiser_hyryder.jpg HTTP/1.1[0m" 304 -
+2026-07-10 18:23:02,452 INFO werkzeug: 127.0.0.1 - - [10/Jul/2026 18:23:02] "GET /static/images/cars/mg%20hector.jpg HTTP/1.1" 200 -
+2026-07-10 18:24:16,881 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\core\\preprocessing.py', reloading
+2026-07-10 18:24:17,469 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 18:24:22,629 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:24:22,629 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 18:24:22,629 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 18:24:22,629 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:24:22,629 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 18:24:22,633 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 18:24:22,975 WARNING werkzeug:  * Debugger is active!
+2026-07-10 18:24:22,984 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-10 18:24:27,375 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\core\\model_trainer.py', reloading
+2026-07-10 18:24:27,893 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 18:24:33,243 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:24:33,243 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 18:24:33,243 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 18:24:33,247 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:24:33,247 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 18:24:33,249 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 18:24:33,594 WARNING werkzeug:  * Debugger is active!
+2026-07-10 18:24:33,608 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-10 18:24:43,141 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\core\\recommendation_engine.py', reloading
+2026-07-10 18:24:43,721 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 18:24:48,962 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:24:48,962 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 18:24:48,962 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 18:24:48,962 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:24:48,962 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 18:24:48,970 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 18:24:49,335 WARNING werkzeug:  * Debugger is active!
+2026-07-10 18:24:49,347 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-10 18:24:53,007 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\core\\report_generator.py', reloading
+2026-07-10 18:24:53,555 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 18:24:58,695 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:24:58,695 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 18:24:58,697 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 18:24:58,697 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:24:58,697 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 18:24:58,697 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 18:24:59,040 WARNING werkzeug:  * Debugger is active!
+2026-07-10 18:24:59,053 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-10 18:25:03,120 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\core\\database_manager.py', reloading
+2026-07-10 18:25:03,121 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\core\\database_manager.py', reloading
+2026-07-10 18:25:03,850 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 18:25:09,255 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:25:09,255 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 18:25:09,255 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 18:25:09,255 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:25:09,255 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 18:25:09,255 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 18:25:09,606 WARNING werkzeug:  * Debugger is active!
+2026-07-10 18:25:09,620 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-10 18:25:11,166 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\train.py', reloading
+2026-07-10 18:25:11,169 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\train.py', reloading
+2026-07-10 18:25:11,821 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 18:25:17,087 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:25:17,087 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 18:25:17,087 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 18:25:17,087 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:25:17,087 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 18:25:17,087 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 18:25:17,454 WARNING werkzeug:  * Debugger is active!
+2026-07-10 18:25:17,459 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-10 18:25:28,069 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\app.py', reloading
+2026-07-10 18:25:28,609 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 18:25:33,642 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:25:33,642 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 18:25:33,642 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 18:25:33,642 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:25:33,642 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 18:25:33,645 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 18:25:33,985 WARNING werkzeug:  * Debugger is active!
+2026-07-10 18:25:33,991 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-10 18:31:59,752 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\core\\dataloader.py', reloading
+2026-07-10 18:32:00,201 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 18:32:05,608 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:32:05,608 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 18:32:05,608 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 18:32:05,610 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:32:05,610 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 18:32:05,610 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 18:32:05,766 WARNING werkzeug:  * Debugger is active!
+2026-07-10 18:32:05,777 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-10 18:46:07,166 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\core\\preprocessing.py', reloading
+2026-07-10 18:46:07,665 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-10 18:46:12,702 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:46:12,702 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 18:46:12,702 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 18:46:12,703 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:46:12,703 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 18:46:12,703 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 18:46:13,030 WARNING werkzeug:  * Debugger is active!
+2026-07-10 18:46:13,039 INFO werkzeug:  * Debugger PIN: 572-604-714
+2026-07-10 18:46:18,337 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:46:18,337 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-10 18:46:18,337 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-10 18:46:18,337 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-10 18:46:18,337 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-10 18:46:18,337 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-10 18:46:19,970 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-10 18:46:21,916 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-13 14:46:54,202 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 14:46:54,202 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 14:46:54,202 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 14:46:54,202 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 14:46:54,202 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 14:46:54,230 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 14:46:54,852 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-13 14:46:54,852 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2026-07-13 14:46:55,076 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 14:47:02,710 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 14:47:02,710 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 14:47:02,710 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 14:47:02,711 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 14:47:02,711 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 14:47:02,712 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 14:47:02,895 WARNING werkzeug:  * Debugger is active!
+2026-07-13 14:47:02,906 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 14:47:03,258 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:47:03] "GET / HTTP/1.1" 200 -
+2026-07-13 14:47:03,258 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\encodings\\unicode_escape.py', reloading
+2026-07-13 14:47:03,800 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 14:47:08,189 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 14:47:08,189 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 14:47:08,189 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 14:47:08,189 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 14:47:08,190 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 14:47:08,191 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 14:47:08,355 WARNING werkzeug:  * Debugger is active!
+2026-07-13 14:47:08,364 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 14:47:08,531 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:47:08] "GET /static/images/cars/tata_altroz.jpg HTTP/1.1" 200 -
+2026-07-13 14:47:08,535 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:47:08] "GET /static/images/cars/toyota_urban_cruiser_hyryder.jpg HTTP/1.1" 200 -
+2026-07-13 14:47:08,545 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:47:08] "GET /static/images/cars/maruti_suzuki_grand_vitara.jpg HTTP/1.1" 200 -
+2026-07-13 14:47:08,545 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:47:08] "GET /static/images/cars/tata_punch.jpg HTTP/1.1" 200 -
+2026-07-13 14:47:08,558 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:47:08] "GET /static/images/cars/tata_nexon.jpg HTTP/1.1" 200 -
+2026-07-13 14:47:08,560 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:47:08] "GET /static/cssstyle.css HTTP/1.1" 200 -
+2026-07-13 14:47:09,400 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:47:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-07-13 14:47:28,611 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\sqlite3\\__init__.py', reloading
+2026-07-13 14:47:28,630 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\sqlite3\\dbapi2.py', reloading
+2026-07-13 14:47:29,042 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 14:47:32,662 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 14:47:32,662 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 14:47:32,662 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 14:47:32,662 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 14:47:32,662 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 14:47:32,662 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 14:47:32,823 WARNING werkzeug:  * Debugger is active!
+2026-07-13 14:47:32,827 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 14:47:34,034 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\core\\database_manager.py', reloading
+2026-07-13 14:47:34,705 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 14:47:38,460 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 14:47:38,460 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 14:47:38,460 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 14:47:38,460 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 14:47:38,460 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 14:47:38,460 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 14:47:38,615 WARNING werkzeug:  * Debugger is active!
+2026-07-13 14:47:38,620 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 14:47:44,311 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-13 14:47:44,351 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:47:44] "POST /predict HTTP/1.1" 200 -
+2026-07-13 14:47:44,391 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:47:44] "GET /static/images/cars/mg%20hector.jpg HTTP/1.1" 200 -
+2026-07-13 14:47:44,392 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:47:44] "GET /static/images/cars/honda_elevate.jpg HTTP/1.1" 200 -
+2026-07-13 14:47:44,697 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:47:44] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-13 14:47:44,736 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:47:44] "[36mGET /static/images/cars/tata_nexon.jpg HTTP/1.1[0m" 304 -
+2026-07-13 14:47:44,737 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:47:44] "GET /static/images/cars/hyundai_creta.jpg HTTP/1.1" 200 -
+2026-07-13 14:47:44,750 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:47:44] "GET /static/images/cars/mg_astor.jpg HTTP/1.1" 200 -
+2026-07-13 14:48:17,198 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-13 14:48:17,199 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:48:17] "POST /predict HTTP/1.1" 200 -
+2026-07-13 14:48:17,236 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:48:17] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-13 14:48:17,254 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:48:17] "GET /static/images/cars/honda_city.jpg HTTP/1.1" 200 -
+2026-07-13 14:48:17,570 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:48:17] "GET /static/images/cars/maruti_suzuki_dzire.jpg HTTP/1.1" 200 -
+2026-07-13 14:48:17,570 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:48:17] "GET /static/images/cars/honda_amaze.jpg HTTP/1.1" 200 -
+2026-07-13 14:48:17,585 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:48:17] "GET /static/images/cars/kia_carens.jpg HTTP/1.1" 200 -
+2026-07-13 14:48:17,586 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:48:17] "GET /static/images/cars/maruti_suzuki_ertiga.jpg HTTP/1.1" 200 -
+2026-07-13 14:49:22,583 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-13 14:49:22,587 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:49:22] "POST /predict HTTP/1.1" 200 -
+2026-07-13 14:49:22,617 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:49:22] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-13 14:49:22,623 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:49:22] "[36mGET /static/images/cars/honda_city.jpg HTTP/1.1[0m" 304 -
+2026-07-13 14:49:22,929 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:49:22] "[36mGET /static/images/cars/maruti_suzuki_dzire.jpg HTTP/1.1[0m" 304 -
+2026-07-13 14:49:22,932 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:49:22] "[36mGET /static/images/cars/honda_amaze.jpg HTTP/1.1[0m" 304 -
+2026-07-13 14:49:22,937 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:49:22] "[36mGET /static/images/cars/kia_carens.jpg HTTP/1.1[0m" 304 -
+2026-07-13 14:49:22,940 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:49:22] "[36mGET /static/images/cars/maruti_suzuki_ertiga.jpg HTTP/1.1[0m" 304 -
+2026-07-13 14:50:32,272 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:50:32] "GET /search?type=brand&query=Tata HTTP/1.1" 200 -
+2026-07-13 14:50:32,300 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:50:32] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-13 14:50:32,525 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:50:32] "GET /static/images/cars/tata_tiago.jpg HTTP/1.1" 200 -
+2026-07-13 14:50:32,613 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:50:32] "[36mGET /static/images/cars/tata_altroz.jpg HTTP/1.1[0m" 304 -
+2026-07-13 14:50:32,614 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:50:32] "[36mGET /static/images/cars/tata_punch.jpg HTTP/1.1[0m" 304 -
+2026-07-13 14:50:32,618 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:50:32] "GET /static/images/cars/tata_harrier.jpg HTTP/1.1" 200 -
+2026-07-13 14:50:32,620 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:50:32] "[36mGET /static/images/cars/tata_nexon.jpg HTTP/1.1[0m" 304 -
+2026-07-13 14:50:32,624 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:50:32] "[36mGET /static/images/cars/maruti_suzuki_grand_vitara.jpg HTTP/1.1[0m" 304 -
+2026-07-13 14:50:32,841 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:50:32] "[36mGET /static/images/cars/toyota_urban_cruiser_hyryder.jpg HTTP/1.1[0m" 304 -
+2026-07-13 14:51:05,184 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-13 14:51:05,201 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:51:05] "POST /predict HTTP/1.1" 200 -
+2026-07-13 14:51:05,234 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:51:05] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-13 14:51:05,239 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:51:05] "[36mGET /static/images/cars/mg%20hector.jpg HTTP/1.1[0m" 304 -
+2026-07-13 14:51:05,550 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:51:05] "[36mGET /static/images/cars/tata_altroz.jpg HTTP/1.1[0m" 304 -
+2026-07-13 14:51:05,550 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:51:05] "GET /static/images/cars/maruti_suzuki_swift.jpg HTTP/1.1" 200 -
+2026-07-13 14:51:05,550 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:51:05] "GET /static/images/cars/hyundai_i20.jpg HTTP/1.1" 200 -
+2026-07-13 14:51:05,577 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:51:05] "GET /static/images/cars/toyota_glanza.jpg HTTP/1.1" 200 -
+2026-07-13 14:51:28,996 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-13 14:51:29,036 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:51:29] "GET /dashboard HTTP/1.1" 200 -
+2026-07-13 14:51:29,047 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:51:29] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-13 14:51:29,081 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:51:29] "GET /static/images/segment_distribution.png HTTP/1.1" 200 -
+2026-07-13 14:51:29,391 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:51:29] "GET /static/images/brand_preference.png HTTP/1.1" 200 -
+2026-07-13 14:51:29,392 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:51:29] "GET /static/images/fuel_preference.png HTTP/1.1" 200 -
+2026-07-13 14:51:29,399 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:51:29] "GET /static/images/budget_distribution.png HTTP/1.1" 200 -
+2026-07-13 14:51:29,399 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:51:29] "GET /static/images/correlation_heatmap.png HTTP/1.1" 200 -
+2026-07-13 14:51:37,227 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:51:37] "GET /history HTTP/1.1" 200 -
+2026-07-13 14:51:37,266 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 14:51:37] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-13 15:08:45,692 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\abc.py', reloading
+2026-07-13 15:08:45,708 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\aifc.py', reloading
+2026-07-13 15:08:45,724 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\antigravity.py', reloading
+2026-07-13 15:08:45,756 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\asynchat.py', reloading
+2026-07-13 15:08:46,326 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 15:08:51,830 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:08:51,830 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 15:08:51,830 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 15:08:51,830 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:08:51,845 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 15:08:51,845 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 15:08:52,052 WARNING werkzeug:  * Debugger is active!
+2026-07-13 15:08:52,069 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 15:08:52,387 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\doctest.py', reloading
+2026-07-13 15:08:52,735 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 15:08:57,322 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:08:57,322 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 15:08:57,322 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 15:08:57,322 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:08:57,322 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 15:08:57,322 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 15:08:57,512 WARNING werkzeug:  * Debugger is active!
+2026-07-13 15:08:57,512 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 15:09:01,764 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\ensurepip\\_uninstall.py', reloading
+2026-07-13 15:09:02,113 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 15:09:06,677 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:09:06,677 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 15:09:06,677 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 15:09:06,677 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:09:06,677 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 15:09:06,677 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 15:09:06,828 WARNING werkzeug:  * Debugger is active!
+2026-07-13 15:09:06,828 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 15:09:08,972 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\idlelib\\iomenu.py', reloading
+2026-07-13 15:09:09,284 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 15:09:13,475 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:09:13,475 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 15:09:13,475 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 15:09:13,475 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:09:13,475 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 15:09:13,475 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 15:09:13,777 WARNING werkzeug:  * Debugger is active!
+2026-07-13 15:09:13,793 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 15:09:14,010 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\imaplib.py', reloading
+2026-07-13 15:09:14,366 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 15:09:19,407 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:09:19,407 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 15:09:19,407 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 15:09:19,409 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:09:19,409 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 15:09:19,409 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 15:09:19,599 WARNING werkzeug:  * Debugger is active!
+2026-07-13 15:09:19,599 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 15:09:19,947 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\logging\\config.py', reloading
+2026-07-13 15:09:20,356 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 15:09:24,870 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:09:24,870 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 15:09:24,870 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 15:09:24,870 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:09:24,870 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 15:09:24,870 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 15:09:25,086 WARNING werkzeug:  * Debugger is active!
+2026-07-13 15:09:25,086 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 15:09:25,229 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\site-packages\\pip\\_internal\\commands\\freeze.py', reloading
+2026-07-13 15:09:25,559 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 15:09:29,910 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:09:29,911 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 15:09:29,911 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 15:09:29,911 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:09:29,911 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 15:09:29,911 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 15:09:30,054 WARNING werkzeug:  * Debugger is active!
+2026-07-13 15:09:30,068 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 15:09:30,263 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\site-packages\\pip\\_internal\\resolution\\resolvelib\\base.py', reloading
+2026-07-13 15:09:30,595 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 15:09:35,088 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:09:35,088 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 15:09:35,088 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 15:09:35,088 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:09:35,088 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 15:09:35,088 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 15:09:35,262 WARNING werkzeug:  * Debugger is active!
+2026-07-13 15:09:35,262 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 15:09:36,774 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\site-packages\\pip\\_vendor\\colorama\\ansi.py', reloading
+2026-07-13 15:09:37,108 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 15:09:41,400 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:09:41,400 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 15:09:41,400 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 15:09:41,400 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:09:41,400 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 15:09:41,400 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 15:09:41,591 WARNING werkzeug:  * Debugger is active!
+2026-07-13 15:09:41,591 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 15:09:41,782 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\site-packages\\pip\\_vendor\\packaging\\utils.py', reloading
+2026-07-13 15:09:42,136 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 15:09:46,865 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:09:46,865 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 15:09:46,865 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 15:09:46,865 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:09:46,865 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 15:09:46,865 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 15:09:47,054 WARNING werkzeug:  * Debugger is active!
+2026-07-13 15:09:47,054 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 15:09:47,260 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\site-packages\\pip\\_vendor\\resolvelib\\__init__.py', reloading
+2026-07-13 15:09:47,635 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 15:09:52,140 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:09:52,140 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 15:09:52,140 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 15:09:52,140 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:09:52,140 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 15:09:52,140 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 15:09:52,319 WARNING werkzeug:  * Debugger is active!
+2026-07-13 15:09:52,321 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 15:09:52,537 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\site-packages\\pip\\_vendor\\tomli\\_parser.py', reloading
+2026-07-13 15:09:52,919 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 15:09:57,359 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:09:57,359 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 15:09:57,361 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 15:09:57,361 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:09:57,361 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 15:09:57,363 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 15:09:57,530 WARNING werkzeug:  * Debugger is active!
+2026-07-13 15:09:57,546 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 15:09:57,754 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\_adapters.py', reloading
+2026-07-13 15:09:58,115 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 15:10:04,899 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:10:04,899 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 15:10:04,899 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 15:10:04,901 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:10:04,901 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 15:10:04,903 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 15:10:05,143 WARNING werkzeug:  * Debugger is active!
+2026-07-13 15:10:05,156 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 15:10:05,443 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\site-packages\\setuptools\\_distutils\\command\\install_data.py', reloading
+2026-07-13 15:10:05,899 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 15:10:12,284 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:10:12,284 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 15:10:12,284 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 15:10:12,284 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:10:12,284 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 15:10:12,284 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 15:10:12,537 WARNING werkzeug:  * Debugger is active!
+2026-07-13 15:10:12,537 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 15:10:13,791 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\site-packages\\setuptools\\_vendor\\typing_extensions.py', reloading
+2026-07-13 15:10:14,236 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 15:10:21,377 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:10:21,377 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 15:10:21,377 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 15:10:21,377 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:10:21,377 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 15:10:21,377 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 15:10:22,139 WARNING werkzeug:  * Debugger is active!
+2026-07-13 15:10:22,155 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 15:10:23,195 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\xdrlib.py', reloading
+2026-07-13 15:10:23,555 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 15:10:30,123 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:10:30,123 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 15:10:30,123 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 15:10:30,123 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:10:30,123 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 15:10:30,123 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 15:10:30,364 WARNING werkzeug:  * Debugger is active!
+2026-07-13 15:10:30,372 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 15:10:49,167 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\tcl\\tix8.4.3\\pref\\WmDefault.py', reloading
+2026-07-13 15:10:49,501 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 15:10:53,946 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:10:53,946 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 15:10:53,946 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 15:10:53,946 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 15:10:53,946 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 15:10:53,946 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 15:10:54,081 WARNING werkzeug:  * Debugger is active!
+2026-07-13 15:10:54,097 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 16:42:16,490 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\sqlite3\\__init__.py', reloading
+2026-07-13 16:42:17,132 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 16:42:24,991 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 16:42:24,991 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 16:42:24,991 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 16:42:24,992 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 16:42:24,992 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 16:42:24,994 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 16:42:25,134 WARNING werkzeug:  * Debugger is active!
+2026-07-13 16:42:25,139 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 16:42:25,492 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\sqlite3\\dbapi2.py', reloading
+2026-07-13 16:42:25,841 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 16:42:29,476 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 16:42:29,476 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 16:42:29,476 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 16:42:29,477 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 16:42:29,477 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 16:42:29,478 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 16:42:29,605 WARNING werkzeug:  * Debugger is active!
+2026-07-13 16:42:29,610 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 16:42:30,251 INFO werkzeug:  * Detected change in 'C:\\Users\\dell\\Desktop\\CarRecommendationSystem\\core\\database_manager.py', reloading
+2026-07-13 16:42:30,653 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 16:42:34,290 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 16:42:34,290 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 16:42:34,290 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 16:42:34,290 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 16:42:34,290 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 16:42:34,291 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 16:42:34,388 WARNING werkzeug:  * Debugger is active!
+2026-07-13 16:42:34,393 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 16:43:02,474 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 16:43:02,474 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 16:43:02,476 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 16:43:02,476 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 16:43:02,476 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 16:43:02,476 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 16:43:02,679 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-13 16:43:02,681 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2026-07-13 16:43:02,696 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 16:43:06,503 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 16:43:06,503 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 16:43:06,503 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 16:43:06,503 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 16:43:06,503 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 16:43:06,503 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 16:43:06,761 WARNING werkzeug:  * Debugger is active!
+2026-07-13 16:43:06,770 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 16:43:24,630 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-13 16:43:24,722 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 16:43:24] "POST /predict HTTP/1.1" 200 -
+2026-07-13 16:43:24,729 INFO werkzeug:  * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\encodings\\unicode_escape.py', reloading
+2026-07-13 16:43:24,794 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 16:43:24] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-13 16:43:24,797 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 16:43:24] "[36mGET /static/images/cars/mg%20hector.jpg HTTP/1.1[0m" 304 -
+2026-07-13 16:43:25,477 INFO werkzeug:  * Restarting with watchdog (windowsapi)
+2026-07-13 16:43:32,554 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 16:43:32,556 INFO mysql.connector: plugin_name: caching_sha2_password
+2026-07-13 16:43:32,556 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2026-07-13 16:43:32,557 INFO mysql.connector: package: mysql.connector.plugins
+2026-07-13 16:43:32,557 INFO mysql.connector: plugin_name: mysql_native_password
+2026-07-13 16:43:32,561 INFO mysql.connector: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2026-07-13 16:43:32,963 WARNING werkzeug:  * Debugger is active!
+2026-07-13 16:43:32,971 INFO werkzeug:  * Debugger PIN: 100-937-448
+2026-07-13 16:43:33,381 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 16:43:33] "[36mGET /static/images/cars/tata_altroz.jpg HTTP/1.1[0m" 304 -
+2026-07-13 16:43:33,389 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 16:43:33] "[36mGET /static/images/cars/hyundai_i20.jpg HTTP/1.1[0m" 304 -
+2026-07-13 16:43:33,397 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 16:43:33] "[36mGET /static/images/cars/maruti_suzuki_swift.jpg HTTP/1.1[0m" 304 -
+2026-07-13 16:43:33,400 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 16:43:33] "[36mGET /static/images/cars/toyota_glanza.jpg HTTP/1.1[0m" 304 -
+2026-07-13 16:43:38,249 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 16:43:38] "GET /search?type=brand&query=Tata HTTP/1.1" 200 -
+2026-07-13 16:43:38,293 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 16:43:38] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-13 16:43:38,398 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 16:43:38] "[36mGET /static/images/cars/tata_altroz.jpg HTTP/1.1[0m" 304 -
+2026-07-13 16:43:38,608 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 16:43:38] "[36mGET /static/images/cars/tata_tiago.jpg HTTP/1.1[0m" 304 -
+2026-07-13 16:43:38,637 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 16:43:38] "[36mGET /static/images/cars/tata_punch.jpg HTTP/1.1[0m" 304 -
+2026-07-13 16:43:38,643 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 16:43:38] "[36mGET /static/images/cars/tata_harrier.jpg HTTP/1.1[0m" 304 -
+2026-07-13 16:43:38,643 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 16:43:38] "[36mGET /static/images/cars/tata_nexon.jpg HTTP/1.1[0m" 304 -
+2026-07-13 16:43:38,648 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 16:43:38] "[36mGET /static/images/cars/maruti_suzuki_grand_vitara.jpg HTTP/1.1[0m" 304 -
+2026-07-13 16:43:38,712 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 16:43:38] "[36mGET /static/images/cars/toyota_urban_cruiser_hyryder.jpg HTTP/1.1[0m" 304 -
+2026-07-13 16:43:47,353 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-13 16:43:47,385 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 16:43:47] "POST /predict HTTP/1.1" 200 -
+2026-07-13 16:43:47,435 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 16:43:47] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-13 16:43:47,463 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 16:43:47] "[36mGET /static/images/cars/honda_city.jpg HTTP/1.1[0m" 304 -
+2026-07-13 16:43:47,790 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 16:43:47] "[36mGET /static/images/cars/mg%20hector.jpg HTTP/1.1[0m" 304 -
+2026-07-13 16:43:47,790 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 16:43:47] "[36mGET /static/images/cars/maruti_suzuki_dzire.jpg HTTP/1.1[0m" 304 -
+2026-07-13 16:43:47,790 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 16:43:47] "[36mGET /static/images/cars/honda_amaze.jpg HTTP/1.1[0m" 304 -
+2026-07-13 16:43:47,801 INFO werkzeug: 127.0.0.1 - - [13/Jul/2026 16:43:47] "[36mGET /static/images/cars/honda_elevate.jpg HTTP/1.1[0m" 304 -
+2026-07-16 01:11:52,199 ERROR __main__: Unable to load artifact: C:\Users\MANYA AGRAWAL\OneDrive\Desktop\CarRecommendationSystem\models\best_model.pkl
+Traceback (most recent call last):
+  File "C:\Users\MANYA AGRAWAL\OneDrive\Desktop\CarRecommendationSystem\app.py", line 296, in _load_joblib
+    return joblib.load(path) if path.exists() else None
+           ~~~~~~~~~~~^^^^^^
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py", line 749, in load
+    obj = _unpickle(
+        fobj,
+    ...<2 lines>...
+        mmap_mode=validated_mmap_mode,
+    )
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py", line 626, in _unpickle
+    obj = unpickler.load()
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\pickle.py", line 1256, in load
+    dispatch[key[0]](self)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\pickle.py", line 1581, in load_stack_global
+    self.append(self.find_class(module, name))
+                ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\pickle.py", line 1622, in find_class
+    __import__(module, level=0)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named '_loss'
+2026-07-16 01:11:56,590 ERROR core.database_manager: 2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (10061)
+2026-07-16 01:12:00,645 ERROR core.database_manager: 2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (10061)
+2026-07-16 01:12:00,683 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-16 01:12:00,684 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2026-07-16 01:12:00,686 INFO werkzeug:  * Restarting with stat
+2026-07-16 01:12:02,805 ERROR __main__: Unable to load artifact: C:\Users\MANYA AGRAWAL\OneDrive\Desktop\CarRecommendationSystem\models\best_model.pkl
+Traceback (most recent call last):
+  File "C:\Users\MANYA AGRAWAL\OneDrive\Desktop\CarRecommendationSystem\app.py", line 296, in _load_joblib
+    return joblib.load(path) if path.exists() else None
+           ~~~~~~~~~~~^^^^^^
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py", line 749, in load
+    obj = _unpickle(
+        fobj,
+    ...<2 lines>...
+        mmap_mode=validated_mmap_mode,
+    )
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py", line 626, in _unpickle
+    obj = unpickler.load()
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\pickle.py", line 1256, in load
+    dispatch[key[0]](self)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\pickle.py", line 1581, in load_stack_global
+    self.append(self.find_class(module, name))
+                ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\pickle.py", line 1622, in find_class
+    __import__(module, level=0)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named '_loss'
+2026-07-16 01:12:07,048 ERROR core.database_manager: 2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (10061)
+2026-07-16 01:12:11,094 ERROR core.database_manager: 2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (10061)
+2026-07-16 01:12:11,113 WARNING werkzeug:  * Debugger is active!
+2026-07-16 01:12:11,117 INFO werkzeug:  * Debugger PIN: 106-112-773
+2026-07-16 01:14:29,897 INFO werkzeug:  * Detected change in 'C:\\Users\\MANYA AGRAWAL\\OneDrive\\Desktop\\CarRecommendationSystem\\app.py', reloading
+2026-07-16 01:14:30,329 INFO werkzeug:  * Restarting with stat
+2026-07-16 01:14:34,083 ERROR __main__: Unable to load artifact: C:\Users\MANYA AGRAWAL\OneDrive\Desktop\CarRecommendationSystem\models\best_model.pkl
+Traceback (most recent call last):
+  File "C:\Users\MANYA AGRAWAL\OneDrive\Desktop\CarRecommendationSystem\app.py", line 296, in _load_joblib
+    return joblib.load(path) if path.exists() else None
+           ~~~~~~~~~~~^^^^^^
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py", line 749, in load
+    obj = _unpickle(
+        fobj,
+    ...<2 lines>...
+        mmap_mode=validated_mmap_mode,
+    )
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py", line 626, in _unpickle
+    obj = unpickler.load()
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\pickle.py", line 1256, in load
+    dispatch[key[0]](self)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\pickle.py", line 1581, in load_stack_global
+    self.append(self.find_class(module, name))
+                ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\pickle.py", line 1622, in find_class
+    __import__(module, level=0)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named '_loss'
+2026-07-16 01:14:50,318 ERROR __main__: Unable to load artifact: C:\Users\MANYA AGRAWAL\OneDrive\Desktop\CarRecommendationSystem\models\best_model.pkl
+Traceback (most recent call last):
+  File "C:\Users\MANYA AGRAWAL\OneDrive\Desktop\CarRecommendationSystem\app.py", line 296, in _load_joblib
+    return joblib.load(path) if path.exists() else None
+           ~~~~~~~~~~~^^^^^^
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py", line 749, in load
+    obj = _unpickle(
+        fobj,
+    ...<2 lines>...
+        mmap_mode=validated_mmap_mode,
+    )
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py", line 626, in _unpickle
+    obj = unpickler.load()
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\pickle.py", line 1256, in load
+    dispatch[key[0]](self)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\pickle.py", line 1581, in load_stack_global
+    self.append(self.find_class(module, name))
+                ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\pickle.py", line 1622, in find_class
+    __import__(module, level=0)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named '_loss'
+2026-07-16 01:14:54,637 ERROR core.database_manager: 2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (10061)
+2026-07-16 01:14:58,698 ERROR core.database_manager: 2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (10061)
+2026-07-16 01:14:58,720 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-16 01:14:58,720 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2026-07-16 01:40:40,104 ERROR __main__: Unable to load artifact: C:\Users\MANYA AGRAWAL\OneDrive\Desktop\CarRecommendationSystem\models\best_model.pkl
+Traceback (most recent call last):
+  File "C:\Users\MANYA AGRAWAL\OneDrive\Desktop\CarRecommendationSystem\app.py", line 296, in _load_joblib
+    return joblib.load(path) if path.exists() else None
+           ~~~~~~~~~~~^^^^^^
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py", line 749, in load
+    obj = _unpickle(
+        fobj,
+    ...<2 lines>...
+        mmap_mode=validated_mmap_mode,
+    )
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py", line 626, in _unpickle
+    obj = unpickler.load()
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\pickle.py", line 1256, in load
+    dispatch[key[0]](self)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\pickle.py", line 1581, in load_stack_global
+    self.append(self.find_class(module, name))
+                ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\pickle.py", line 1622, in find_class
+    __import__(module, level=0)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named '_loss'
+2026-07-16 01:40:40,451 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-16 01:40:40,451 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2026-07-16 01:41:38,550 ERROR __main__: Unable to load artifact: C:\Users\MANYA AGRAWAL\OneDrive\Desktop\CarRecommendationSystem\models\best_model.pkl
+Traceback (most recent call last):
+  File "C:\Users\MANYA AGRAWAL\OneDrive\Desktop\CarRecommendationSystem\app.py", line 296, in _load_joblib
+    return joblib.load(path) if path.exists() else None
+           ~~~~~~~~~~~^^^^^^
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py", line 749, in load
+    obj = _unpickle(
+        fobj,
+    ...<2 lines>...
+        mmap_mode=validated_mmap_mode,
+    )
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py", line 626, in _unpickle
+    obj = unpickler.load()
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\pickle.py", line 1256, in load
+    dispatch[key[0]](self)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\pickle.py", line 1581, in load_stack_global
+    self.append(self.find_class(module, name))
+                ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\pickle.py", line 1622, in find_class
+    __import__(module, level=0)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named '_loss'
+2026-07-16 01:41:38,769 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-16 01:41:38,769 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2026-07-16 01:41:50,012 INFO werkzeug: 127.0.0.1 - - [16/Jul/2026 01:41:50] "GET / HTTP/1.1" 200 -
+2026-07-16 01:41:50,038 INFO werkzeug: 127.0.0.1 - - [16/Jul/2026 01:41:50] "GET /static/cssstyle.css HTTP/1.1" 200 -
+2026-07-16 01:41:50,048 INFO werkzeug: 127.0.0.1 - - [16/Jul/2026 01:41:50] "GET /static/images/cars/tata_punch.jpg HTTP/1.1" 200 -
+2026-07-16 01:41:50,055 INFO werkzeug: 127.0.0.1 - - [16/Jul/2026 01:41:50] "GET /static/images/cars/tata_altroz.jpg HTTP/1.1" 200 -
+2026-07-16 01:41:50,092 INFO werkzeug: 127.0.0.1 - - [16/Jul/2026 01:41:50] "GET /static/images/cars/maruti_suzuki_grand_vitara.jpg HTTP/1.1" 200 -
+2026-07-16 01:41:50,095 INFO werkzeug: 127.0.0.1 - - [16/Jul/2026 01:41:50] "GET /static/images/cars/toyota_urban_cruiser_hyryder.jpg HTTP/1.1" 200 -
+2026-07-16 01:41:50,096 INFO werkzeug: 127.0.0.1 - - [16/Jul/2026 01:41:50] "GET /static/images/cars/tata_nexon.jpg HTTP/1.1" 200 -
+2026-07-16 01:41:50,709 INFO werkzeug: 127.0.0.1 - - [16/Jul/2026 01:41:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-07-16 01:42:04,482 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-16 01:42:04,500 INFO werkzeug: 127.0.0.1 - - [16/Jul/2026 01:42:04] "POST /predict HTTP/1.1" 200 -
+2026-07-16 01:42:04,548 INFO werkzeug: 127.0.0.1 - - [16/Jul/2026 01:42:04] "GET /static/images/cars/mg%20hector.jpg HTTP/1.1" 200 -
+2026-07-16 01:42:04,572 INFO werkzeug: 127.0.0.1 - - [16/Jul/2026 01:42:04] "GET /static/images/cars/honda_elevate.jpg HTTP/1.1" 200 -
+2026-07-16 01:42:04,576 INFO werkzeug: 127.0.0.1 - - [16/Jul/2026 01:42:04] "GET /static/images/cars/hyundai_creta.jpg HTTP/1.1" 200 -
+2026-07-16 01:42:04,576 INFO werkzeug: 127.0.0.1 - - [16/Jul/2026 01:42:04] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-16 01:42:04,582 INFO werkzeug: 127.0.0.1 - - [16/Jul/2026 01:42:04] "GET /static/images/cars/mg_astor.jpg HTTP/1.1" 200 -
+2026-07-16 01:42:04,589 INFO werkzeug: 127.0.0.1 - - [16/Jul/2026 01:42:04] "[36mGET /static/images/cars/tata_nexon.jpg HTTP/1.1[0m" 304 -
+2026-07-16 01:42:11,552 INFO core.report_generator: Dashboard visualizations generated successfully.
+2026-07-16 01:42:11,570 INFO werkzeug: 127.0.0.1 - - [16/Jul/2026 01:42:11] "GET /dashboard HTTP/1.1" 200 -
+2026-07-16 01:42:11,611 INFO werkzeug: 127.0.0.1 - - [16/Jul/2026 01:42:11] "GET /static/images/segment_distribution.png HTTP/1.1" 200 -
+2026-07-16 01:42:11,636 INFO werkzeug: 127.0.0.1 - - [16/Jul/2026 01:42:11] "[36mGET /static/cssstyle.css HTTP/1.1[0m" 304 -
+2026-07-16 01:42:11,640 INFO werkzeug: 127.0.0.1 - - [16/Jul/2026 01:42:11] "GET /static/images/brand_preference.png HTTP/1.1" 200 -
+2026-07-16 01:42:11,648 INFO werkzeug: 127.0.0.1 - - [16/Jul/2026 01:42:11] "GET /static/images/fuel_preference.png HTTP/1.1" 200 -
+2026-07-16 01:42:11,652 INFO werkzeug: 127.0.0.1 - - [16/Jul/2026 01:42:11] "GET /static/images/budget_distribution.png HTTP/1.1" 200 -
+2026-07-16 01:42:11,655 INFO werkzeug: 127.0.0.1 - - [16/Jul/2026 01:42:11] "GET /static/images/correlation_heatmap.png HTTP/1.1" 200 -
+2026-07-16 02:06:47,323 ERROR __main__: Unable to load artifact: C:\Users\MANYA AGRAWAL\OneDrive\Desktop\CarRecommendationSystem\models\best_model.pkl
+Traceback (most recent call last):
+  File "C:\Users\MANYA AGRAWAL\OneDrive\Desktop\CarRecommendationSystem\app.py", line 296, in _load_joblib
+    return joblib.load(path) if path.exists() else None
+           ~~~~~~~~~~~^^^^^^
+  File "C:\Users\MANYA AGRAWAL\OneDrive\Desktop\CarRecommendationSystem\.venv\Lib\site-packages\joblib\numpy_pickle.py", line 749, in load
+    obj = _unpickle(
+        fobj,
+    ...<2 lines>...
+        mmap_mode=validated_mmap_mode,
+    )
+  File "C:\Users\MANYA AGRAWAL\OneDrive\Desktop\CarRecommendationSystem\.venv\Lib\site-packages\joblib\numpy_pickle.py", line 626, in _unpickle
+    obj = unpickler.load()
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\pickle.py", line 1256, in load
+    dispatch[key[0]](self)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\pickle.py", line 1581, in load_stack_global
+    self.append(self.find_class(module, name))
+                ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\MANYA AGRAWAL\AppData\Local\Programs\Python\Python313\Lib\pickle.py", line 1622, in find_class
+    __import__(module, level=0)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named '_loss'
+2026-07-16 02:06:47,724 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-16 02:06:47,724 INFO werkzeug: [33mPress CTRL+C to quit[0m
